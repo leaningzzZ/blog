@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang=zh>
+<head>
+  <meta charset="utf-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-transform" />
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no,email=no,adress=no">
+  <!-- Color theme for statusbar -->
+  <meta name="theme-color" content="#000000" />
+  <!-- 强制页面在当前窗口以独立页面显示,防止别人在框架里调用页面 -->
+  <meta http-equiv="window-target" content="_top" />
+  
+  
+  <title>http | lzzZ</title>
+  <meta name="description" content="什么是http？什么是https？http：基于 tcp&#x2F;id。是一个客户端和服务端请求和响应的标准，用于从 www 服务器传输超文本到本地浏览器的超文本传输协议。 https：是以安全为目标的 HTTP 通道，通过在 HTTP 下加入 SSL 层进行加密。其作用是 建立一个信息安全通道，来确保数据的传输，确保网站的真实性。 http 和 https 的区别和优缺点？ http 是超文本">
+<meta property="og:type" content="article">
+<meta property="og:title" content="http">
+<meta property="og:url" content="https://leaningzzz.github.io/blog/2023/02/12/interview/http/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="什么是http？什么是https？http：基于 tcp&#x2F;id。是一个客户端和服务端请求和响应的标准，用于从 www 服务器传输超文本到本地浏览器的超文本传输协议。 https：是以安全为目标的 HTTP 通道，通过在 HTTP 下加入 SSL 层进行加密。其作用是 建立一个信息安全通道，来确保数据的传输，确保网站的真实性。 http 和 https 的区别和优缺点？ http 是超文本">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2023-02-11T17:18:22.423Z">
+<meta property="article:modified_time" content="2023-02-11T17:53:24.726Z">
+<meta property="article:author" content="lzzZ">
+<meta property="article:tag" content="http">
+<meta name="twitter:card" content="summary">
+  <!-- Canonical links -->
+  <link rel="canonical" href="https://leaningzzz.github.io/blog/2023/02/12/interview/http/index.html">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png" type="image/x-icon">
+  
+  
+<link rel="stylesheet" href="/blog/css/style.css">
+
+  
+  
+  
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+
+<body class="main-center" itemscope itemtype="http://schema.org/WebPage">
+  <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+  <div class="slimContent">
+    <div class="navbar-header">
+      
+      
+      <div class="profile-block text-center">
+        <a id="avatar" href="https://github.com/leaningzzZ" target="_blank">
+          <img class="img-circle img-rotate" src="/blog/images/avatar.jpg" width="200" height="200">
+        </a>
+        <h2 id="name" class="hidden-xs hidden-sm">lzzZ</h2>
+        <h3 id="title" class="hidden-xs hidden-sm hidden-md">react、小程序</h3>
+        <small id="location" class="text-muted hidden-xs hidden-sm"><i class="icon icon-map-marker"></i> 北京</small>
+      </div>
+      
+      <div class="search" id="search-form-wrap">
+
+    <form class="search-form sidebar-form">
+        <div class="input-group">
+            <input type="text" class="search-form-input form-control" placeholder="搜索" />
+            <span class="input-group-btn">
+                <button type="submit" class="search-form-submit btn btn-flat" onclick="return false;"><i class="icon icon-search"></i></button>
+            </span>
+        </div>
+    </form>
+    <div class="ins-search">
+  <div class="ins-search-mask"></div>
+  <div class="ins-search-container">
+    <div class="ins-input-wrapper">
+      <input type="text" class="ins-search-input" placeholder="想要查找什么..." x-webkit-speech />
+      <button type="button" class="close ins-close ins-selectable" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+    </div>
+    <div class="ins-section-wrapper">
+      <div class="ins-section-container"></div>
+    </div>
+  </div>
+</div>
+
+
+</div>
+      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <nav id="main-navbar" class="collapse navbar-collapse" itemscope itemtype="http://schema.org/SiteNavigationElement" role="navigation">
+      <ul class="nav navbar-nav main-nav menu-highlight">
+        
+        
+        <li class="menu-item menu-item-home">
+          <a href="/blog/.">
+            
+            <i class="icon icon-home-fill"></i>
+            
+            <span class="menu-title">首页</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/blog/categories">
+            
+            <i class="icon icon-folder"></i>
+            
+            <span class="menu-title">分类</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/blog/archives">
+            
+            <i class="icon icon-archives-fill"></i>
+            
+            <span class="menu-title">归档</span>
+          </a>
+        </li>
+        
+      </ul>
+      
+	
+    <ul class="social-links">
+    	
+        <li><a href="https://github.com/leaningzzZ" target="_blank" title="Github" ><i class="icon icon-github"></i></a></li>
+        
+    </ul>
+
+    </nav>
+  </div>
+</header>
+
+  
+  
+<main class="main" role="main">
+  <div class="content">
+  <article id="post-interview/http" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
+    
+    <div class="article-header">
+      
+        
+  
+    <h1 class="article-title" itemprop="name">
+      http
+    </h1>
+  
+
+      
+      <div class="article-meta">
+        <span class="article-date">
+    <i class="icon icon-calendar-check"></i>
+	<a href="/blog/2023/02/12/interview/http/" class="article-date">
+	  <time datetime="2023-02-11T17:18:22.423Z" itemprop="datePublished">2023-02-12</time>
+	</a>
+</span>
+        
+  <span class="article-category">
+    <i class="icon icon-folder"></i>
+    <a class="article-category-link" href="/blog/categories/%E9%9D%A2%E8%AF%95%E7%9B%B8%E5%85%B3/">面试相关</a>
+  </span>
+
+        
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>
+	<a class="article-tag-link-link" href="/blog/tags/http/" rel="tag">http</a>
+  </span>
+
+
+        
+
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/blog/2023/02/12/interview/http/#comments" class="article-comment-link">评论</a></span>
+        
+      </div>
+    </div>
+    <div class="article-entry marked-body" itemprop="articleBody">
+      
+        <h1 id="什么是http？什么是https？"><a href="#什么是http？什么是https？" class="headerlink" title="什么是http？什么是https？"></a>什么是http？什么是https？</h1><p>http：基于 tcp&#x2F;id。是一个客户端和服务端请求和响应的标准，用于从 www 服务器传输超文本到本地浏览器的超文本传输协议。</p>
+<p>https：是以安全为目标的 HTTP 通道，通过在 HTTP 下加入 SSL 层进行加密。其作用是 建立一个信息安全通道，来确保数据的传输，确保网站的真实性。</p>
+<h1 id="http-和-https-的区别和优缺点？"><a href="#http-和-https-的区别和优缺点？" class="headerlink" title="http 和 https 的区别和优缺点？"></a>http 和 https 的区别和优缺点？</h1><ul>
+<li>http 是超文本传输协议，信息是明文传输。HTTPS 协议要比 HTTP 协议更加安全，https 是具有安全性的 ssl 加密传输协议，可防止数据在传输过程中被窃取、改变，确保数据的完整性。</li>
+<li>http 协议的默认端口为80，https 的默认端口为 443。</li>
+<li>https 协议需要 ca 证书，费用较高。</li>
+<li>SSL 证书需要绑定 IP。</li>
+</ul>
+<h1 id="https-协议的工作原理？"><a href="#https-协议的工作原理？" class="headerlink" title="https 协议的工作原理？"></a>https 协议的工作原理？</h1><ol>
+<li>客户端使用 https url 访问服务器，则要求 web 服务器建立 ssl 连接。</li>
+<li>web 服务器收到客户端的请求之后，会将网站的证书（包含公钥）传输给客户端。</li>
+<li>客户端和 web 服务器端开始协商 ssl 链接的安全等级（加密等级）。</li>
+<li>客户端、浏览器通过双方协商一致的安全登记，建立会话密钥，然后通过网站的公钥来加密会话密钥，并传送给网站。</li>
+<li>web 服务器通过自己的私钥解密出会话密钥。</li>
+<li>web 客户端通过会话密钥加密与客户端之间的通信。</li>
+</ol>
+<h1 id="https-一定是安全的吗？"><a href="#https-一定是安全的吗？" class="headerlink" title="https 一定是安全的吗？"></a>https 一定是安全的吗？</h1><p>不一定。中间人攻击。<br>中间人与用户或服务器在同一个局域网，中间人可以截获用户的数据包，包括SSL数据包，并做一个假的服务器SSL证书与用户通信，从而截获用户输入的机密信息。当网站被假的SSL证书替换时，浏览器会警告用户此证书不受信任，需要用户确认是否信任此证书，用户习惯性点击“继续浏览”，中间人攻击轻而易举的实现了。</p>
+<h1 id="什么是三次握手？"><a href="#什么是三次握手？" class="headerlink" title="什么是三次握手？"></a>什么是三次握手？</h1><p>三次握手是客户端与服务器在建立TCP连接时的步骤。在握手的过程中传送的包里不含数据，三次握手完毕后，客户端和服务器才正式开始传送数据。</p>
+<ul>
+<li>第一次握手： 建立连接时，客户端发送syn包（syn&#x3D;j）到服务器，并进入 <em>SYN_SENT</em> 状态，等待服务器确认。</li>
+<li>第二次握手：服务器收到syn包，并确认客户的SYN（ack&#x3D;j+1），同时也发送一个自己的SYN包（syn&#x3D;k），即SYN+ACK包，此时服务器进入<em>SYN_RECV</em>状态。</li>
+<li>第三次握手：客户端收到服务器的SYN+ACK包，向服务器发送确认包ACK（ack&#x3D;k+1），此包发送完毕，客户端与服务器进入*ESTABLTSHED（TCP连接成功）*状态，完成三次握手。</li>
+</ul>
+<h1 id="TCP和UDP的区别？"><a href="#TCP和UDP的区别？" class="headerlink" title="TCP和UDP的区别？"></a>TCP和UDP的区别？</h1><ul>
+<li>TCP 是面向连接的，UDP无连接。</li>
+<li>TCP 仅支持单播传输，UDP 提供了单播、多播、广播的功能。</li>
+<li>TCP 可靠，三次握手保证了连接的可靠性。UDP 不可靠，UDP 是无连接的，通信不需要建立连接，对接收到的数据也不发送确认信号，发送端不知道数据是否会正确接收。</li>
+<li>UDP 开销小（不需要连接），数据传输效率更高，实时性更好。</li>
+</ul>
+<h1 id="什么是请求跨域？"><a href="#什么是请求跨域？" class="headerlink" title="什么是请求跨域？"></a>什么是请求跨域？</h1><p>跨域指由于浏览器的<em>同源同域</em>策略，不能执行其他网站的脚本。（为了安全）<br>同源策略,是浏览器对 JavaScript 实施的安全限制，只要<em>协议</em>、<em>域名</em>、<em>端口</em>有任何一个不同，都被当作是不同的域。<br>跨域原理，即是通过各种方式，避开浏览器的安全限制。</p>
+<h1 id="怎么解决请求跨域的问题？"><a href="#怎么解决请求跨域的问题？" class="headerlink" title="怎么解决请求跨域的问题？"></a>怎么解决请求跨域的问题？</h1><ul>
+<li>JSONP<br>script标签、image标签中的src属性不受浏览器同源同域策略影响，因此可以利用这个特性，服务端不再返回 JSON 格式的数据，而是返回一段调用某个函数的 js 代码，在 src 中进行了调用，这样实现了跨域。</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//动态创建 script</span></span><br><span class="line"><span class="keyword">var</span> script = <span class="variable language_">document</span>.<span class="title function_">createElement</span>(<span class="string">&#x27;script&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">// 设置回调函数</span></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">getData</span>(<span class="params">data</span>) &#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(data)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//设置 script 的 src 属性，并设置请求地址</span></span><br><span class="line">script.<span class="property">src</span> = <span class="string">&#x27;http://localhost:3000/?callback=getData&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 让 script 生效</span></span><br><span class="line"><span class="variable language_">document</span>.<span class="property">body</span>.<span class="title function_">appendChild</span>(script)</span><br></pre></td></tr></table></figure>
+
+<p>缺点：只支持get</p>
+<ul>
+<li><p>CORS<br>CORS(Cross-origin resource sharing)跨域资源共享。服务器设置Access-Control-Allow-Origin HTTP响应头之后，浏览器将会允许跨域请求</p>
+</li>
+<li><p>proxy代理<br>目前常用方式,通过服务器设置代理。客户端向服务端请求会产生跨域，但服务端向服务端请求不存在跨域。</p>
+</li>
+</ul>
+<h1 id="cookie、localStorage、sessionStorage的区别"><a href="#cookie、localStorage、sessionStorage的区别" class="headerlink" title="cookie、localStorage、sessionStorage的区别"></a>cookie、localStorage、sessionStorage的区别</h1><ul>
+<li>相同点：都是客户端用来数据持久化的</li>
+<li>不同点：<ul>
+<li>大小不同。cookie约4KB，sessionStorage和localStorage的存储比cookie大得多，可以达到5M+。</li>
+<li>cookie设置过期时间，在过期时间之内一直有效；localStorage不手动清理一直有效；sessionStorage只在当前回话有效，关闭浏览器后会清空。</li>
+<li>cookie的数据会随着请求发到服务端，localStorage、sessionStorage的数据存在本地。</li>
+</ul>
+</li>
+</ul>
+<h1 id="从输入URL到页面加载的全过程"><a href="#从输入URL到页面加载的全过程" class="headerlink" title="从输入URL到页面加载的全过程"></a>从输入URL到页面加载的全过程</h1><ol>
+<li>浏览器输入url并回车。</li>
+<li>查找缓存，看浏览器缓存中是否有该页面，如果有的话显示页面内容，没有则往下进行DNS解析。<ol>
+<li>浏览器缓存</li>
+<li>操作系统缓存</li>
+<li>路由器缓存</li>
+<li>ISP缓存（？）</li>
+</ol>
+</li>
+<li>DNS解析。向DNS服务器发送请求，获取该url域名所对应的id地址。（UDP连接）。</li>
+<li>建立TCP连接：通过解析到的ip地址和默认80端口，建立TCP连接。</li>
+<li>发起HTTP请求：浏览器发起读取文件的HTTP请求，，该请求报文作为TCP三次握手的第三次数据发送给服务器。</li>
+<li>服务端相应结果，并返回对应html。</li>
+<li>关闭TCP连接（四次挥手）。</li>
+<li>浏览器渲染，客户端解析HTML的内容并渲染出来。<ol>
+<li>构建DOM树。</li>
+<li>构建CSS tree。</li>
+<li>DOM树和CSS树结合，构建出渲染树（render tree）。</li>
+<li>布局</li>
+<li>绘制</li>
+<li></li>
+<li></li>
+<li></li>
+</ol>
+</li>
+</ol>
+<h1 id="浏览器缓存"><a href="#浏览器缓存" class="headerlink" title="浏览器缓存"></a>浏览器缓存</h1><p>强缓存<br>协商缓存</p>
+<p>体现的状态码</p>
+
+      
+    </div>
+    <div class="article-footer">
+      <blockquote class="mt-2x">
+  <ul class="post-copyright list-unstyled">
+    
+    <li class="post-copyright-link hidden-xs">
+      <strong>本文链接：</strong>
+      <a href="https://leaningzzz.github.io/blog/2023/02/12/interview/http/" title="http" target="_blank" rel="external">https://leaningzzz.github.io/blog/2023/02/12/interview/http/</a>
+    </li>
+    
+    <li class="post-copyright-license">
+      <strong>版权声明： </strong> 本博客所有文章除特别声明外，均采用 <a href="http://creativecommons.org/licenses/by/4.0/deed.zh" target="_blank" rel="external">CC BY 4.0 CN协议</a> 许可协议。转载请注明出处！
+    </li>
+  </ul>
+</blockquote>
+
+
+<div class="panel panel-default panel-badger">
+  <div class="panel-body">
+    <figure class="media">
+      <div class="media-left">
+        <a href="https://github.com/leaningzzZ" target="_blank" class="img-burn thumb-sm visible-lg">
+          <img src="/blog/images/avatar.jpg" class="img-rounded w-full" alt="">
+        </a>
+      </div>
+      <div class="media-body">
+        <h3 class="media-heading"><a href="https://github.com/leaningzzZ" target="_blank"><span class="text-dark">lzzZ</span><small class="ml-1x">react、小程序</small></a></h3>
+        <div>个人简介。</div>
+      </div>
+    </figure>
+  </div>
+</div>
+
+
+    </div>
+  </article>
+  
+    
+  <section id="comments">
+  	
+      <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+      </div>
+    
+  </section>
+
+
+  
+</div>
+
+  <nav class="bar bar-footer clearfix" data-stick-bottom>
+  <div class="bar-inner">
+  
+  <ul class="pager pull-left">
+    
+    <li class="prev">
+      <a href="/blog/2023/02/12/interview/css/" title="css"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;上一篇</span></a>
+    </li>
+    
+    
+    <li class="next">
+      <a href="/blog/2023/02/12/leetcode/2331-%E8%AE%A1%E7%AE%97%E5%B8%83%E5%B0%94%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E5%80%BC/" title="2331.计算布尔二叉树的值"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
+    </li>
+    
+    
+  </ul>
+  
+  
+  
+  <div class="bar-right">
+    
+  </div>
+  </div>
+</nav>
+  
+
+
+</main>
+
+  <footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
+	
+	
+    <ul class="social-links">
+    	
+        <li><a href="https://github.com/leaningzzZ" target="_blank" title="Github" ><i class="icon icon-github"></i></a></li>
+        
+    </ul>
+
+    <div class="copyright">
+    	
+        <div class="publishby">
+        	Theme by <a href="https://github.com/cofess" target="_blank"> cofess </a>base on <a href="https://github.com/cofess/hexo-theme-pure" target="_blank">pure</a>.
+        </div>
+    </div>
+</footer>
+  <script src="//cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+<script>
+window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
+</script>
+
+<script src="/blog/js/plugin.min.js"></script>
+
+
+<script src="/blog/js/application.js"></script>
+
+
+    <script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: '文章',
+            PAGES: '页面',
+            CATEGORIES: '分类',
+            TAGS: '标签',
+            UNTITLED: '(未命名)',
+        },
+        ROOT_URL: '/blog/',
+        CONTENT_URL: '/blog/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+
+<script src="/blog/js/insight.js"></script>
+
+
+
+
+
+
+   
+
+
+
+
+   
+    
+    <script defer>
+    var disqus_config = function () {
+        
+            this.page.url = 'https://leaningzzz.github.io/blog/2023/02/12/interview/http/';
+        
+        this.page.identifier = 'interview/http';
+    };
+    (function() { 
+        var d = document, s = d.createElement('script');  
+        s.src = '//' + '' + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+
+
+
+
+
+
+
+
+</body>
+</html>
