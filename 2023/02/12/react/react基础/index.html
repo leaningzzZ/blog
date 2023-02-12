@@ -18,17 +18,19 @@
   
   
   <title>react基础 | lzzZ</title>
-  <meta property="og:type" content="article">
+  <meta name="description" content="事件中，箭头函数和bind的区别  事件  react合成事件，统一挂载到根元素上 挂载到根元素上的弊端   React.portal  父组件更新，子组件一定更新吗？  子组件更新，父组件会不会更新？  shouldComponentUpdate在provider&#x2F;context更新时无效，即总会render  性能优化  pureComponent：相当于在shouldCompon">
+<meta property="og:type" content="article">
 <meta property="og:title" content="react基础">
-<meta property="og:url" content="https://leaningzzz.github.io/blog/2023/02/12/react%E5%9F%BA%E7%A1%80/index.html">
+<meta property="og:url" content="http://example.com/2023/02/12/react/react%E5%9F%BA%E7%A1%80/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="事件中，箭头函数和bind的区别  事件  react合成事件，统一挂载到根元素上 挂载到根元素上的弊端   React.portal  父组件更新，子组件一定更新吗？  子组件更新，父组件会不会更新？  shouldComponentUpdate在provider&#x2F;context更新时无效，即总会render  性能优化  pureComponent：相当于在shouldCompon">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-02-11T16:32:03.000Z">
-<meta property="article:modified_time" content="2023-02-11T17:12:08.921Z">
+<meta property="article:modified_time" content="2023-02-12T12:05:12.814Z">
 <meta property="article:author" content="lzzZ">
 <meta name="twitter:card" content="summary">
   <!-- Canonical links -->
-  <link rel="canonical" href="https://leaningzzz.github.io/blog/2023/02/12/react%E5%9F%BA%E7%A1%80/index.html">
+  <link rel="canonical" href="http://example.com/2023/02/12/react/react%E5%9F%BA%E7%A1%80/index.html">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -36,7 +38,7 @@
     <link rel="icon" href="/favicon.png" type="image/x-icon">
   
   
-<link rel="stylesheet" href="https://leaningzzz.github.io/blog/css/style.css">
+<link rel="stylesheet" href="/css/style.css">
 
   
   
@@ -53,7 +55,7 @@
       
       <div class="profile-block text-center">
         <a id="avatar" href="https://github.com/leaningzzZ" target="_blank">
-          <img class="img-circle img-rotate" src="https://leaningzzz.github.io/blog/images/avatar.jpg" width="200" height="200">
+          <img class="img-circle img-rotate" src="/images/avatar.jpg" width="200" height="200">
         </a>
         <h2 id="name" class="hidden-xs hidden-sm">lzzZ</h2>
         <h3 id="title" class="hidden-xs hidden-sm hidden-md">react、小程序</h3>
@@ -97,7 +99,7 @@
         
         
         <li class="menu-item menu-item-home">
-          <a href="https://leaningzzz.github.io/blog/">
+          <a href="/.">
             
             <i class="icon icon-home-fill"></i>
             
@@ -107,7 +109,7 @@
         
         
         <li class="menu-item menu-item-categories">
-          <a href="https://leaningzzz.github.io/blog/categories">
+          <a href="/categories">
             
             <i class="icon icon-folder"></i>
             
@@ -117,7 +119,7 @@
         
         
         <li class="menu-item menu-item-archives">
-          <a href="https://leaningzzz.github.io/blog/archives">
+          <a href="/archives">
             
             <i class="icon icon-archives-fill"></i>
             
@@ -142,7 +144,7 @@
   
 <main class="main" role="main">
   <div class="content">
-  <article id="post-react基础" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
+  <article id="post-react/react基础" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
     
     <div class="article-header">
       
@@ -157,27 +159,55 @@
       <div class="article-meta">
         <span class="article-date">
     <i class="icon icon-calendar-check"></i>
-	<a href="https://leaningzzz.github.io/blog/2023/02/12/react%E5%9F%BA%E7%A1%80/" class="article-date">
+	<a href="/2023/02/12/react/react%E5%9F%BA%E7%A1%80/" class="article-date">
 	  <time datetime="2023-02-11T16:32:03.000Z" itemprop="datePublished">2023-02-12</time>
 	</a>
 </span>
         
   <span class="article-category">
     <i class="icon icon-folder"></i>
-    <a class="article-category-link" href="https://leaningzzz.github.io/blog/categories/react/">react</a>
+    <a class="article-category-link" href="/categories/react/">react</a>
   </span>
 
         
 
         
 
-        <span class="post-comment"><i class="icon icon-comment"></i> <a href="https://leaningzzz.github.io/blog/2023/02/12/react%E5%9F%BA%E7%A1%80/#comments" class="article-comment-link">评论</a></span>
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2023/02/12/react/react%E5%9F%BA%E7%A1%80/#comments" class="article-comment-link">评论</a></span>
         
       </div>
     </div>
     <div class="article-entry marked-body" itemprop="articleBody">
       
-        
+        <ul>
+<li><p>事件中，箭头函数和bind的区别</p>
+</li>
+<li><p>事件</p>
+<ul>
+<li>react合成事件，统一挂载到根元素上</li>
+<li>挂载到根元素上的弊端</li>
+</ul>
+</li>
+<li><p>React.portal</p>
+</li>
+<li><p>父组件更新，子组件一定更新吗？<br>  子组件更新，父组件会不会更新？</p>
+</li>
+<li><p>shouldComponentUpdate在provider&#x2F;context更新时无效，即总会render</p>
+</li>
+<li><p>性能优化</p>
+<ul>
+<li><p>pureComponent：相当于在shouldComponent里进行浅对比</p>
+</li>
+<li><p>React.memo</p>
+</li>
+<li><p>shouldComponentUpdate</p>
+</li>
+<li><p>反模式？</p>
+</li>
+</ul>
+</li>
+</ul>
+
       
     </div>
     <div class="article-footer">
@@ -186,7 +216,7 @@
     
     <li class="post-copyright-link hidden-xs">
       <strong>本文链接：</strong>
-      <a href="https://leaningzzz.github.io/blog/2023/02/12/react%E5%9F%BA%E7%A1%80/" title="react基础" target="_blank" rel="external">https://leaningzzz.github.io/blog/2023/02/12/react基础/</a>
+      <a href="http://example.com/2023/02/12/react/react%E5%9F%BA%E7%A1%80/" title="react基础" target="_blank" rel="external">http://example.com/2023/02/12/react/react基础/</a>
     </li>
     
     <li class="post-copyright-license">
@@ -201,7 +231,7 @@
     <figure class="media">
       <div class="media-left">
         <a href="https://github.com/leaningzzZ" target="_blank" class="img-burn thumb-sm visible-lg">
-          <img src="https://leaningzzz.github.io/blog/images/avatar.jpg" class="img-rounded w-full" alt="">
+          <img src="/images/avatar.jpg" class="img-rounded w-full" alt="">
         </a>
       </div>
       <div class="media-body">
@@ -235,12 +265,12 @@
   <ul class="pager pull-left">
     
     <li class="prev">
-      <a href="https://leaningzzz.github.io/blog/2023/02/12/leetcode/2335-%E8%A3%85%E6%BB%A1%E6%9D%AF%E5%AD%90%E9%9C%80%E8%A6%81%E7%9A%84%E6%9C%80%E7%9F%AD%E6%80%BB%E6%97%B6%E9%95%BF/" title="2335.装满杯子需要的最短总时长"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;上一篇</span></a>
+      <a href="/2023/02/12/leetcode/2335-%E8%A3%85%E6%BB%A1%E6%9D%AF%E5%AD%90%E9%9C%80%E8%A6%81%E7%9A%84%E6%9C%80%E7%9F%AD%E6%80%BB%E6%97%B6%E9%95%BF/" title="2335.装满杯子需要的最短总时长"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;上一篇</span></a>
     </li>
     
     
     <li class="next">
-      <a href="https://leaningzzz.github.io/blog/2023/02/11/hello-world/" title="Hello World"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
+      <a href="/2023/02/11/hello-world/" title="Hello World"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
     </li>
     
     
@@ -279,10 +309,10 @@
 window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
 </script>
 
-<script src="https://leaningzzz.github.io/blog/js/plugin.min.js"></script>
+<script src="/js/plugin.min.js"></script>
 
 
-<script src="https://leaningzzz.github.io/blog/js/application.js"></script>
+<script src="/js/application.js"></script>
 
 
     <script>
@@ -295,14 +325,14 @@ window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
             TAGS: '标签',
             UNTITLED: '(未命名)',
         },
-        ROOT_URL: 'https://leaningzzz.github.io/blog/',
-        CONTENT_URL: 'https://leaningzzz.github.io/blog/content.json',
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
     };
     window.INSIGHT_CONFIG = INSIGHT_CONFIG;
 })(window);
 </script>
 
-<script src="https://leaningzzz.github.io/blog/js/insight.js"></script>
+<script src="/js/insight.js"></script>
 
 
 
@@ -319,9 +349,9 @@ window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
     <script defer>
     var disqus_config = function () {
         
-            this.page.url = 'https://leaningzzz.github.io/blog/2023/02/12/react%E5%9F%BA%E7%A1%80/';
+            this.page.url = 'http://example.com/2023/02/12/react/react%E5%9F%BA%E7%A1%80/';
         
-        this.page.identifier = 'react基础';
+        this.page.identifier = 'react/react基础';
     };
     (function() { 
         var d = document, s = d.createElement('script');  

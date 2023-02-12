@@ -18,19 +18,19 @@
   
   
   <title>1138.字母板上的路径 | lzzZ</title>
-  <meta name="description" content="题目链接https:&#x2F;&#x2F;leetcode.cn&#x2F;problems&#x2F;alphabet-board-path 思路 从第一个字符开始，找到xIndex，yIndex 根据currentIndex和当前字符的xIndex和yIndex，计算该往左右或上下移动 统计结果 循环第二个字符  12345678910111213141516171819202122232425262728293031323334">
+  <meta name="description" content="题目链接https:&#x2F;&#x2F;leetcode.cn&#x2F;problems&#x2F;alphabet-board-path 思路 从第一个字符开始，找到当前字符在board中的xIndex和yIndex 根据currentIndex和当前字符的xIndex和yIndex，计算该往左右或上下移动 统计结果 循环第二个字符 需要注意z字符的移动，不能超出边界  12345678910111213141516171819">
 <meta property="og:type" content="article">
 <meta property="og:title" content="1138.字母板上的路径">
-<meta property="og:url" content="https://leaningzzz.github.io/blog/2023/02/12/leetcode/1138-%E5%AD%97%E6%AF%8D%E6%9D%BF%E4%B8%8A%E7%9A%84%E8%B7%AF%E5%BE%84/index.html">
+<meta property="og:url" content="http://example.com/2023/02/12/leetcode/1138-%E5%AD%97%E6%AF%8D%E6%9D%BF%E4%B8%8A%E7%9A%84%E8%B7%AF%E5%BE%84/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="题目链接https:&#x2F;&#x2F;leetcode.cn&#x2F;problems&#x2F;alphabet-board-path 思路 从第一个字符开始，找到xIndex，yIndex 根据currentIndex和当前字符的xIndex和yIndex，计算该往左右或上下移动 统计结果 循环第二个字符  12345678910111213141516171819202122232425262728293031323334">
+<meta property="og:description" content="题目链接https:&#x2F;&#x2F;leetcode.cn&#x2F;problems&#x2F;alphabet-board-path 思路 从第一个字符开始，找到当前字符在board中的xIndex和yIndex 根据currentIndex和当前字符的xIndex和yIndex，计算该往左右或上下移动 统计结果 循环第二个字符 需要注意z字符的移动，不能超出边界  12345678910111213141516171819">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-02-12T11:56:01.000Z">
-<meta property="article:modified_time" content="2023-02-12T11:59:28.238Z">
+<meta property="article:modified_time" content="2023-02-12T12:03:53.952Z">
 <meta property="article:author" content="lzzZ">
 <meta name="twitter:card" content="summary">
   <!-- Canonical links -->
-  <link rel="canonical" href="https://leaningzzz.github.io/blog/2023/02/12/leetcode/1138-%E5%AD%97%E6%AF%8D%E6%9D%BF%E4%B8%8A%E7%9A%84%E8%B7%AF%E5%BE%84/index.html">
+  <link rel="canonical" href="http://example.com/2023/02/12/leetcode/1138-%E5%AD%97%E6%AF%8D%E6%9D%BF%E4%B8%8A%E7%9A%84%E8%B7%AF%E5%BE%84/index.html">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -38,7 +38,7 @@
     <link rel="icon" href="/favicon.png" type="image/x-icon">
   
   
-<link rel="stylesheet" href="https://leaningzzz.github.io/blog/css/style.css">
+<link rel="stylesheet" href="/css/style.css">
 
   
   
@@ -55,7 +55,7 @@
       
       <div class="profile-block text-center">
         <a id="avatar" href="https://github.com/leaningzzZ" target="_blank">
-          <img class="img-circle img-rotate" src="https://leaningzzz.github.io/blog/images/avatar.jpg" width="200" height="200">
+          <img class="img-circle img-rotate" src="/images/avatar.jpg" width="200" height="200">
         </a>
         <h2 id="name" class="hidden-xs hidden-sm">lzzZ</h2>
         <h3 id="title" class="hidden-xs hidden-sm hidden-md">react、小程序</h3>
@@ -99,7 +99,7 @@
         
         
         <li class="menu-item menu-item-home">
-          <a href="https://leaningzzz.github.io/blog/">
+          <a href="/.">
             
             <i class="icon icon-home-fill"></i>
             
@@ -109,7 +109,7 @@
         
         
         <li class="menu-item menu-item-categories">
-          <a href="https://leaningzzz.github.io/blog/categories">
+          <a href="/categories">
             
             <i class="icon icon-folder"></i>
             
@@ -119,7 +119,7 @@
         
         
         <li class="menu-item menu-item-archives">
-          <a href="https://leaningzzz.github.io/blog/archives">
+          <a href="/archives">
             
             <i class="icon icon-archives-fill"></i>
             
@@ -159,21 +159,21 @@
       <div class="article-meta">
         <span class="article-date">
     <i class="icon icon-calendar-check"></i>
-	<a href="https://leaningzzz.github.io/blog/2023/02/12/leetcode/1138-%E5%AD%97%E6%AF%8D%E6%9D%BF%E4%B8%8A%E7%9A%84%E8%B7%AF%E5%BE%84/" class="article-date">
+	<a href="/2023/02/12/leetcode/1138-%E5%AD%97%E6%AF%8D%E6%9D%BF%E4%B8%8A%E7%9A%84%E8%B7%AF%E5%BE%84/" class="article-date">
 	  <time datetime="2023-02-12T11:56:01.000Z" itemprop="datePublished">2023-02-12</time>
 	</a>
 </span>
         
   <span class="article-category">
     <i class="icon icon-folder"></i>
-    <a class="article-category-link" href="https://leaningzzz.github.io/blog/categories/leetcode/">leetcode</a>
+    <a class="article-category-link" href="/categories/leetcode/">leetcode</a>
   </span>
 
         
 
         
 
-        <span class="post-comment"><i class="icon icon-comment"></i> <a href="https://leaningzzz.github.io/blog/2023/02/12/leetcode/1138-%E5%AD%97%E6%AF%8D%E6%9D%BF%E4%B8%8A%E7%9A%84%E8%B7%AF%E5%BE%84/#comments" class="article-comment-link">评论</a></span>
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2023/02/12/leetcode/1138-%E5%AD%97%E6%AF%8D%E6%9D%BF%E4%B8%8A%E7%9A%84%E8%B7%AF%E5%BE%84/#comments" class="article-comment-link">评论</a></span>
         
       </div>
     </div>
@@ -181,10 +181,11 @@
       
         <h1 id="题目链接"><a href="#题目链接" class="headerlink" title="题目链接"></a>题目链接</h1><p><a target="_blank" rel="noopener" href="https://leetcode.cn/problems/alphabet-board-path">https://leetcode.cn/problems/alphabet-board-path</a></p>
 <h1 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h1><ul>
-<li>从第一个字符开始，找到xIndex，yIndex</li>
-<li>根据currentIndex和当前字符的xIndex和yIndex，计算该往左右或上下移动</li>
+<li>从第一个字符开始，找到当前字符在board中的<strong>xIndex</strong>和<strong>yIndex</strong></li>
+<li>根据<strong>currentIndex</strong>和当前字符的<strong>xIndex</strong>和<strong>yIndex</strong>，计算该往左右或上下移动</li>
 <li>统计结果</li>
 <li>循环第二个字符</li>
+<li><strong>需要注意z字符的移动，不能超出边界</strong></li>
 </ul>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment"> * @lc app=leetcode.cn id=1138 lang=javascript</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * [1138] 字母板上的路径</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// @lc code=start</span></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> &#123;<span class="type">string</span>&#125; <span class="variable">target</span></span></span><br><span class="line"><span class="comment"> * <span class="doctag">@return</span> &#123;<span class="type">string</span>&#125;</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">var</span> alphabetBoardPath = <span class="keyword">function</span> (<span class="params">target</span>) &#123;</span><br><span class="line">  <span class="keyword">const</span> board = [<span class="string">&quot;abcde&quot;</span>, <span class="string">&quot;fghij&quot;</span>, <span class="string">&quot;klmno&quot;</span>, <span class="string">&quot;pqrst&quot;</span>, <span class="string">&quot;uvwxy&quot;</span>, <span class="string">&quot;z&quot;</span>]</span><br><span class="line">  <span class="keyword">let</span> result = <span class="string">&#x27;&#x27;</span>, curX = <span class="number">0</span>, curY = <span class="number">0</span></span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; target.<span class="property">length</span>; i++) &#123;</span><br><span class="line">    <span class="keyword">const</span> cur = target[i]</span><br><span class="line">    <span class="keyword">let</span> xIndex, yIndex</span><br><span class="line">    board.<span class="title function_">forEach</span>(<span class="function">(<span class="params">item, index</span>) =&gt;</span> &#123;</span><br><span class="line">      <span class="keyword">if</span> (item.<span class="title function_">includes</span>(cur)) &#123;</span><br><span class="line">        yIndex = index</span><br><span class="line">        xIndex = item.<span class="title function_">indexOf</span>(cur)</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;)</span><br><span class="line">    <span class="keyword">const</span> x = xIndex - curX, y = yIndex - curY</span><br><span class="line">    <span class="keyword">const</span> xArr = <span class="keyword">new</span> <span class="title class_">Array</span>(<span class="title class_">Math</span>.<span class="title function_">abs</span>(x)).<span class="title function_">fill</span>(x &gt; <span class="number">0</span> ? <span class="string">&#x27;R&#x27;</span> : <span class="string">&#x27;L&#x27;</span>), yArr = <span class="keyword">new</span> <span class="title class_">Array</span>(<span class="title class_">Math</span>.<span class="title function_">abs</span>(y)).<span class="title function_">fill</span>(y &gt; <span class="number">0</span> ? <span class="string">&#x27;D&#x27;</span> : <span class="string">&#x27;U&#x27;</span>)</span><br><span class="line">    <span class="comment">// 需要从其他格子前往z格时，先移动x轴，再移动y轴</span></span><br><span class="line">    <span class="comment">// 先移动y轴的话，有可能撞到边界</span></span><br><span class="line">    <span class="keyword">if</span> (cur === <span class="string">&#x27;z&#x27;</span>) &#123;</span><br><span class="line">      result += xArr.<span class="title function_">join</span>(<span class="string">&#x27;&#x27;</span>) + yArr.<span class="title function_">join</span>(<span class="string">&#x27;&#x27;</span>) + <span class="string">&#x27;!&#x27;</span></span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">      result += yArr.<span class="title function_">join</span>(<span class="string">&#x27;&#x27;</span>) + xArr.<span class="title function_">join</span>(<span class="string">&#x27;&#x27;</span>) + <span class="string">&#x27;!&#x27;</span></span><br><span class="line">    &#125;</span><br><span class="line">    [curX, curY] = [xIndex, yIndex]</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> result</span><br><span class="line">&#125;;</span><br><span class="line"><span class="keyword">const</span> target = <span class="string">&quot;zb&quot;</span></span><br><span class="line"><span class="comment">// &quot;DDDDD!UUUUURRR!DDDDLLLD!&quot;</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="title function_">alphabetBoardPath</span>(target))</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">// &quot;zb&quot;</span></span><br><span class="line"><span class="comment">// 输出：</span></span><br><span class="line"><span class="comment">// &quot;DDDDD!RUUUUU!&quot;</span></span><br><span class="line"><span class="comment">// 预期结果：</span></span><br><span class="line"><span class="comment">// &quot;DDDDD!UUUUUR!&quot;</span></span><br><span class="line"><span class="comment">// @lc code=end</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
@@ -196,7 +197,7 @@
     
     <li class="post-copyright-link hidden-xs">
       <strong>本文链接：</strong>
-      <a href="https://leaningzzz.github.io/blog/2023/02/12/leetcode/1138-%E5%AD%97%E6%AF%8D%E6%9D%BF%E4%B8%8A%E7%9A%84%E8%B7%AF%E5%BE%84/" title="1138.字母板上的路径" target="_blank" rel="external">https://leaningzzz.github.io/blog/2023/02/12/leetcode/1138-字母板上的路径/</a>
+      <a href="http://example.com/2023/02/12/leetcode/1138-%E5%AD%97%E6%AF%8D%E6%9D%BF%E4%B8%8A%E7%9A%84%E8%B7%AF%E5%BE%84/" title="1138.字母板上的路径" target="_blank" rel="external">http://example.com/2023/02/12/leetcode/1138-字母板上的路径/</a>
     </li>
     
     <li class="post-copyright-license">
@@ -211,7 +212,7 @@
     <figure class="media">
       <div class="media-left">
         <a href="https://github.com/leaningzzZ" target="_blank" class="img-burn thumb-sm visible-lg">
-          <img src="https://leaningzzz.github.io/blog/images/avatar.jpg" class="img-rounded w-full" alt="">
+          <img src="/images/avatar.jpg" class="img-rounded w-full" alt="">
         </a>
       </div>
       <div class="media-body">
@@ -246,7 +247,7 @@
     
     
     <li class="next">
-      <a href="https://leaningzzz.github.io/blog/2023/02/12/interview/html/" title="html"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
+      <a href="/2023/02/12/interview/html/" title="html"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
     </li>
     
     
@@ -285,10 +286,10 @@
 window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
 </script>
 
-<script src="https://leaningzzz.github.io/blog/js/plugin.min.js"></script>
+<script src="/js/plugin.min.js"></script>
 
 
-<script src="https://leaningzzz.github.io/blog/js/application.js"></script>
+<script src="/js/application.js"></script>
 
 
     <script>
@@ -301,14 +302,14 @@ window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
             TAGS: '标签',
             UNTITLED: '(未命名)',
         },
-        ROOT_URL: 'https://leaningzzz.github.io/blog/',
-        CONTENT_URL: 'https://leaningzzz.github.io/blog/content.json',
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
     };
     window.INSIGHT_CONFIG = INSIGHT_CONFIG;
 })(window);
 </script>
 
-<script src="https://leaningzzz.github.io/blog/js/insight.js"></script>
+<script src="/js/insight.js"></script>
 
 
 
@@ -325,7 +326,7 @@ window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
     <script defer>
     var disqus_config = function () {
         
-            this.page.url = 'https://leaningzzz.github.io/blog/2023/02/12/leetcode/1138-%E5%AD%97%E6%AF%8D%E6%9D%BF%E4%B8%8A%E7%9A%84%E8%B7%AF%E5%BE%84/';
+            this.page.url = 'http://example.com/2023/02/12/leetcode/1138-%E5%AD%97%E6%AF%8D%E6%9D%BF%E4%B8%8A%E7%9A%84%E8%B7%AF%E5%BE%84/';
         
         this.page.identifier = 'leetcode/1138-字母板上的路径';
     };
