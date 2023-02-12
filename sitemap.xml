@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://leaningzzz.github.io/blog/2023/02/12/react/react%E5%9F%BA%E7%A1%80/</loc>
+    
+    <lastmod>2023-02-12</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://leaningzzz.github.io/blog/2023/02/12/interview/promise/</loc>
     
     <lastmod>2023-02-12</lastmod>
@@ -30,15 +39,6 @@
   
   <url>
     <loc>https://leaningzzz.github.io/blog/2023/02/12/interview/css/</loc>
-    
-    <lastmod>2023-02-12</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://leaningzzz.github.io/blog/2023/02/12/react/react%E5%9F%BA%E7%A1%80/</loc>
     
     <lastmod>2023-02-12</lastmod>
     
@@ -144,13 +144,6 @@
   </url>
   
   <url>
-    <loc>https://leaningzzz.github.io/blog/tags/html/</loc>
-    <lastmod>2023-02-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://leaningzzz.github.io/blog/tags/http/</loc>
     <lastmod>2023-02-12</lastmod>
     <changefreq>weekly</changefreq>
@@ -164,17 +157,24 @@
     <priority>0.2</priority>
   </url>
   
+  <url>
+    <loc>https://leaningzzz.github.io/blog/tags/html/</loc>
+    <lastmod>2023-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
 
   
   <url>
-    <loc>https://leaningzzz.github.io/blog/categories/leetcode/</loc>
+    <loc>https://leaningzzz.github.io/blog/categories/%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/</loc>
     <lastmod>2023-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://leaningzzz.github.io/blog/categories/%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/</loc>
+    <loc>https://leaningzzz.github.io/blog/categories/leetcode/</loc>
     <lastmod>2023-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
