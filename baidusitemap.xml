@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://leaningzzz.github.io/blog/blog/2023/02/12/react/react%E5%9F%BA%E7%A1%80/</loc>
+    <lastmod>2023-02-14</lastmod>
+  </url>
+  <url>
     <loc>https://leaningzzz.github.io/blog/blog/2023/02/14/leetcode/1124-%E8%A1%A8%E7%8E%B0%E8%89%AF%E5%A5%BD%E7%9A%84%E6%9C%80%E9%95%BF%E6%97%B6%E9%97%B4%E6%AE%B5/</loc>
     <lastmod>2023-02-14</lastmod>
   </url>
@@ -37,27 +41,19 @@
     <lastmod>2023-02-14</lastmod>
   </url>
   <url>
-    <loc>https://leaningzzz.github.io/blog/blog/2023/02/12/react/react%E5%9F%BA%E7%A1%80/</loc>
+    <loc>https://leaningzzz.github.io/blog/blog/2023/02/12/basic/promise/</loc>
     <lastmod>2023-02-12</lastmod>
   </url>
   <url>
-    <loc>https://leaningzzz.github.io/blog/blog/2023/02/12/interview/promise/</loc>
+    <loc>https://leaningzzz.github.io/blog/blog/2023/02/12/basic/http/</loc>
     <lastmod>2023-02-12</lastmod>
   </url>
   <url>
-    <loc>https://leaningzzz.github.io/blog/blog/2023/02/12/interview/http/</loc>
+    <loc>https://leaningzzz.github.io/blog/blog/2023/02/12/basic/html/</loc>
     <lastmod>2023-02-12</lastmod>
   </url>
   <url>
-    <loc>https://leaningzzz.github.io/blog/blog/2023/02/12/interview/html/</loc>
+    <loc>https://leaningzzz.github.io/blog/blog/2023/02/12/basic/css/</loc>
     <lastmod>2023-02-12</lastmod>
-  </url>
-  <url>
-    <loc>https://leaningzzz.github.io/blog/blog/2023/02/12/interview/css/</loc>
-    <lastmod>2023-02-12</lastmod>
-  </url>
-  <url>
-    <loc>https://leaningzzz.github.io/blog/blog/2023/02/11/hello-world/</loc>
-    <lastmod>2023-02-11</lastmod>
   </url>
 </urlset> 
