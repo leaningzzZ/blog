@@ -17,16 +17,23 @@
   <meta http-equiv="window-target" content="_top" />
   
   
-  <title>标签: css | lzzZ</title>
-  <meta property="og:type" content="website">
-<meta property="og:title" content="lzzZ">
-<meta property="og:url" content="https://leaningzzz.github.io/blog/tags/css/index.html">
+  <title>手写call、bind、apply | lzzZ</title>
+  <meta name="description" content="call、bind、apply的用法 改变this指向。   call、apply 改变this后，会执行该方法。 bind返回改变this后的函数   参数不同  123call(this,...args)apply(this,[args])bind(this)  实现 call  将方法挂载到context上进行调用。调用完成后记录result，并删除context上的挂载 123456789">
+<meta property="og:type" content="article">
+<meta property="og:title" content="手写call、bind、apply">
+<meta property="og:url" content="https://leaningzzz.github.io/blog/2023/02/14/interview/%E6%89%8B%E5%86%99call%E3%80%81bind%E3%80%81apply/index.html">
 <meta property="og:site_name" content="lzzZ">
+<meta property="og:description" content="call、bind、apply的用法 改变this指向。   call、apply 改变this后，会执行该方法。 bind返回改变this后的函数   参数不同  123call(this,...args)apply(this,[args])bind(this)  实现 call  将方法挂载到context上进行调用。调用完成后记录result，并删除context上的挂载 123456789">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2023-02-14T08:46:50.000Z">
+<meta property="article:modified_time" content="2023-02-14T09:00:50.345Z">
 <meta property="article:author" content="lzzZ">
+<meta property="article:tag" content="call">
+<meta property="article:tag" content="bind">
+<meta property="article:tag" content="apply">
 <meta name="twitter:card" content="summary">
   <!-- Canonical links -->
-  <link rel="canonical" href="https://leaningzzz.github.io/blog/tags/css/index.html">
+  <link rel="canonical" href="https://leaningzzz.github.io/blog/2023/02/14/interview/%E6%89%8B%E5%86%99call%E3%80%81bind%E3%80%81apply/index.html">
   
     <link rel="alternate" href="/atom.xml" title="lzzZ" type="application/atom+xml">
   
@@ -253,72 +260,129 @@
 </aside>
 
   
-  <main class="main" role="main">
-  <article class="content article article-tags post-type-list" itemscope="">
-    <header class="article-header">
-      <h1 itemprop="name" class="hidden-xs">标签: css</h1>
-      <p class="text-muted hidden-xs">共 1 篇文章</p>
-      <nav role="navigation" id="nav-main" class="okayNav">
-        <ul>
-          <li><a href="/blog/tags">All</a></li>
-          
-          <li><a href="/blog/tags/call/">call</a></li>
-          
-          <li><a href="/blog/tags/bind/">bind</a></li>
-          
-          <li><a href="/blog/tags/apply/">apply</a></li>
-          
-          <li><a href="/blog/tags/每日一题/">每日一题</a></li>
-          
-          <li><a href="/blog/tags/滑动窗口/">滑动窗口</a></li>
-          
-          <li><a href="/blog/tags/css/">css</a></li>
-          
-          <li><a href="/blog/tags/html/">html</a></li>
-          
-          <li><a href="/blog/tags/http/">http</a></li>
-          
-          <li><a href="/blog/tags/网络/">网络</a></li>
-          
-          <li><a href="/blog/tags/promise/">promise</a></li>
-          
-          <li><a href="/blog/tags/异步/">异步</a></li>
-          
-        </ul>
-      </nav>
-    </header>
-    <!-- /header -->
-    <div class="article-body">
-      <div class="row">
-        
-<div class="col-md-6">
+  
+<main class="main" role="main">
+  <div class="content">
+  <article id="post-interview/手写call、bind、apply" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
     
-<article class="panel panel-default hover-shadow hover-grow" itemscope itemtype="http://schema.org/BlogPosting">
-  <div class="panel-body">
-     <div class="article-meta">
-       <time datetime="2023-02-11T17:18:22.432Z" itemprop="datePublished">2023-02-12</time>
-     </div>
-     <h3 class="article-title" itemprop="name">
-       <a class="article-link" href="/blog/2023/02/12/basic/css/">css</a>
-     </h3>
-   </div>
-   
-   <div class="panel-footer">
-     
-      <a href="/blog/tags/css/" class="label label-default mb">css</a>
-     
-     
-   </div>
-   
-</article>
+    <div class="article-header">
+      
+        
+  
+    <h1 class="article-title" itemprop="name">
+      手写call、bind、apply
+    </h1>
+  
+
+      
+      <div class="article-meta">
+        <span class="article-date">
+    <i class="icon icon-calendar-check"></i>
+	<a href="/blog/2023/02/14/interview/%E6%89%8B%E5%86%99call%E3%80%81bind%E3%80%81apply/" class="article-date">
+	  <time datetime="2023-02-14T08:46:50.000Z" itemprop="datePublished">2023-02-14</time>
+	</a>
+</span>
+        
+  <span class="article-category">
+    <i class="icon icon-folder"></i>
+    <a class="article-category-link" href="/blog/categories/%E6%89%8B%E5%86%99%E9%A2%98/">手写题</a>
+  </span>
+
+        
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>
+	<a class="article-tag-link-link" href="/blog/tags/apply/" rel="tag">apply</a>, <a class="article-tag-link-link" href="/blog/tags/bind/" rel="tag">bind</a>, <a class="article-tag-link-link" href="/blog/tags/call/" rel="tag">call</a>
+  </span>
 
 
-</div>
+        
 
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/blog/2023/02/14/interview/%E6%89%8B%E5%86%99call%E3%80%81bind%E3%80%81apply/#comments" class="article-comment-link">评论</a></span>
+        
       </div>
     </div>
+    <div class="article-entry marked-body" itemprop="articleBody">
+      
+        <h1 id="call、bind、apply的用法"><a href="#call、bind、apply的用法" class="headerlink" title="call、bind、apply的用法"></a>call、bind、apply的用法</h1><ol>
+<li>改变this指向。</li>
+</ol>
+<ul>
+<li>call、apply 改变this后，会执行该方法。</li>
+<li>bind返回改变this后的函数</li>
+</ul>
+<ol start="2">
+<li>参数不同</li>
+</ol>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="title function_">call</span>(<span class="variable language_">this</span>,...args)</span><br><span class="line"><span class="title function_">apply</span>(<span class="variable language_">this</span>,[args])</span><br><span class="line"><span class="title function_">bind</span>(<span class="variable language_">this</span>)</span><br></pre></td></tr></table></figure>
+
+<h1 id="实现"><a href="#实现" class="headerlink" title="实现"></a>实现</h1><ol>
+<li>call</li>
+</ol>
+<p>将方法挂载到context上进行调用。<br>调用完成后记录result，并删除context上的挂载</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">myCall</span>(<span class="params">context,...args</span>)&#123;</span><br><span class="line">  <span class="keyword">if</span>(context === <span class="literal">undefined</span> || context === <span class="literal">null</span>)&#123;</span><br><span class="line">    context = <span class="variable language_">window</span></span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">let</span> symbol = <span class="title class_">Symbol</span>()</span><br><span class="line">  context[symbol] = <span class="variable language_">this</span></span><br><span class="line">  <span class="keyword">let</span> result = context[symbol](...args)</span><br><span class="line">  <span class="keyword">delete</span> context[symbol]</span><br><span class="line">  <span class="keyword">return</span> result</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>apply<br>与call思路一致</li>
+</ol>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">myApply</span> (context,args)&#123;</span><br><span class="line">  <span class="keyword">if</span>(context === <span class="literal">undefined</span> || context === <span class="literal">null</span>)&#123;</span><br><span class="line">    context = <span class="variable language_">window</span></span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">let</span> symbol = <span class="title class_">Symbol</span>()</span><br><span class="line">  context[symbol] = <span class="variable language_">this</span></span><br><span class="line">  <span class="keyword">const</span>  result = context[symbol](...args)</span><br><span class="line">  <span class="keyword">delete</span> context[symbol]</span><br><span class="line">  <span class="keyword">return</span> result</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    <div class="article-footer">
+      <blockquote class="mt-2x">
+  <ul class="post-copyright list-unstyled">
+    
+    <li class="post-copyright-link hidden-xs">
+      <strong>本文链接：</strong>
+      <a href="https://leaningzzz.github.io/blog/2023/02/14/interview/%E6%89%8B%E5%86%99call%E3%80%81bind%E3%80%81apply/" title="手写call、bind、apply" target="_blank" rel="external">https://leaningzzz.github.io/blog/2023/02/14/interview/手写call、bind、apply/</a>
+    </li>
+    
+    <li class="post-copyright-license">
+      <strong>版权声明： </strong> 本博客所有文章除特别声明外，均采用 <a href="http://creativecommons.org/licenses/by/4.0/deed.zh" target="_blank" rel="external">CC BY 4.0 CN协议</a> 许可协议。转载请注明出处！
+    </li>
+  </ul>
+</blockquote>
+
+
+    </div>
   </article>
-   
+  
+    
+  <section id="comments">
+  	
+      <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+      </div>
+    
+  </section>
+
+
+  
+</div>
+
+  <nav class="bar bar-footer clearfix" data-stick-bottom>
+  <div class="bar-inner">
+  
+  <ul class="pager pull-left">
+    
+    
+    <li class="next">
+      <a href="/blog/2023/02/14/leetcode/1124-%E8%A1%A8%E7%8E%B0%E8%89%AF%E5%A5%BD%E7%9A%84%E6%9C%80%E9%95%BF%E6%97%B6%E9%97%B4%E6%AE%B5/" title="1124.表现良好的最长时间段"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
+    </li>
+    
+    
+  </ul>
+  
+  
+  
+  <div class="bar-right">
+    
+  </div>
+  </div>
+</nav>
+  
+
+
 </main>
 
   <footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
@@ -370,6 +434,29 @@ window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
 
 
 
+
+
+   
+
+
+
+
+   
+    
+    <script defer>
+    var disqus_config = function () {
+        
+            this.page.url = 'https://leaningzzz.github.io/blog/2023/02/14/interview/%E6%89%8B%E5%86%99call%E3%80%81bind%E3%80%81apply/';
+        
+        this.page.identifier = 'interview/手写call、bind、apply';
+    };
+    (function() { 
+        var d = document, s = d.createElement('script');  
+        s.src = '//' + '' + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
 
 
 
