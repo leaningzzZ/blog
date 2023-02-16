@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://leaningzzz.github.io/blog/blog/2023/02/16/leetcode/2341-%E6%95%B0%E7%BB%84%E8%83%BD%E5%BD%A2%E6%88%90%E5%A4%9A%E5%B0%91%E6%95%B0%E5%AF%B9/</loc>
+    <lastmod>2023-02-16</lastmod>
+  </url>
+  <url>
     <loc>https://leaningzzz.github.io/blog/blog/2023/02/14/interview/%E6%89%8B%E5%86%99call%E3%80%81bind%E3%80%81apply/</loc>
-    <lastmod>2023-02-14</lastmod>
+    <lastmod>2023-02-15</lastmod>
   </url>
   <url>
     <loc>https://leaningzzz.github.io/blog/blog/2023/02/12/react/react%E5%9F%BA%E7%A1%80/</loc>
