@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://leaningzzz.github.io/blog/blog/2023/02/21/leetcode/50-pow-x-n/</loc>
+    <lastmod>2023-02-22</lastmod>
+  </url>
+  <url>
     <loc>https://leaningzzz.github.io/blog/blog/2023/02/12/leetcode/20-%E6%9C%89%E6%95%88%E6%8B%AC%E5%8F%B7/</loc>
-    <lastmod>2023-02-20</lastmod>
+    <lastmod>2023-02-22</lastmod>
   </url>
   <url>
     <loc>https://leaningzzz.github.io/blog/blog/2023/02/20/leetcode/2347-%E6%9C%80%E5%A5%BD%E7%9A%84%E6%89%91%E5%85%8B%E6%89%8B%E7%89%8C/</loc>
