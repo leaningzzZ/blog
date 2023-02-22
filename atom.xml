@@ -182,15 +182,15 @@
     <category term="手写题" scheme="https://leaningzzz.github.io/blog/categories/%E6%89%8B%E5%86%99%E9%A2%98/"/>
     
     
-    <category term="八股文" scheme="https://leaningzzz.github.io/blog/tags/%E5%85%AB%E8%82%A1%E6%96%87/"/>
-    
-    <category term="面试资料" scheme="https://leaningzzz.github.io/blog/tags/%E9%9D%A2%E8%AF%95%E8%B5%84%E6%96%99/"/>
-    
     <category term="call" scheme="https://leaningzzz.github.io/blog/tags/call/"/>
     
     <category term="bind" scheme="https://leaningzzz.github.io/blog/tags/bind/"/>
     
     <category term="apply" scheme="https://leaningzzz.github.io/blog/tags/apply/"/>
+    
+    <category term="八股文" scheme="https://leaningzzz.github.io/blog/tags/%E5%85%AB%E8%82%A1%E6%96%87/"/>
+    
+    <category term="面试资料" scheme="https://leaningzzz.github.io/blog/tags/%E9%9D%A2%E8%AF%95%E8%B5%84%E6%96%99/"/>
     
   </entry>
   
@@ -342,11 +342,11 @@
     <category term="八股文" scheme="https://leaningzzz.github.io/blog/categories/%E5%85%AB%E8%82%A1%E6%96%87/"/>
     
     
-    <category term="css" scheme="https://leaningzzz.github.io/blog/tags/css/"/>
-    
     <category term="八股文" scheme="https://leaningzzz.github.io/blog/tags/%E5%85%AB%E8%82%A1%E6%96%87/"/>
     
     <category term="面试资料" scheme="https://leaningzzz.github.io/blog/tags/%E9%9D%A2%E8%AF%95%E8%B5%84%E6%96%99/"/>
+    
+    <category term="css" scheme="https://leaningzzz.github.io/blog/tags/css/"/>
     
   </entry>
   
