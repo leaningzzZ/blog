@@ -6,7 +6,7 @@
   <link href="https://leaningzzz.github.io/blog/atom.xml" rel="self"/>
   
   <link href="https://leaningzzz.github.io/blog/"/>
-  <updated>2023-02-22T07:38:18.012Z</updated>
+  <updated>2023-02-23T07:31:11.701Z</updated>
   <id>https://leaningzzz.github.io/blog/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>防抖、节流</title>
+    <link href="https://leaningzzz.github.io/blog/2023/02/23/interview/%E9%98%B2%E6%8A%96%E3%80%81%E8%8A%82%E6%B5%81/"/>
+    <id>https://leaningzzz.github.io/blog/2023/02/23/interview/%E9%98%B2%E6%8A%96%E3%80%81%E8%8A%82%E6%B5%81/</id>
+    <published>2023-02-23T07:23:18.000Z</published>
+    <updated>2023-02-23T07:31:11.701Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h1><p>避免高频操作</p><ul><li>防抖：触发高频事件后n秒内函数只会执行一次,如果n秒内高频事件再次被触发,则重新计算时间。</li><li>节流：间隔n秒触发一次。</li></ul><h1 id="实现"><a href="#实现" class="headerlink" title="实现"></a>实现</h1><h2 id="防抖"><a href="#防抖" class="headerlink" title="防抖"></a>防抖</h2><ol><li>设置一个定时器</li><li>如果n秒内被再次触发，则清除定时器，重新设置</li></ol><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="title function_">debounce</span> = (<span class="params">fn, delay</span>)=&gt;&#123;</span><br><span class="line">  <span class="keyword">let</span> timer = <span class="literal">null</span></span><br><span class="line">  <span class="keyword">return</span> <span class="keyword">function</span>(<span class="params"></span>)&#123;</span><br><span class="line">    <span class="built_in">clearTimeout</span>(timer)</span><br><span class="line">    timer = <span class="built_in">setTimeout</span>(<span class="function">()=&gt;</span>&#123;</span><br><span class="line">      fn.<span class="title function_">apply</span>(<span class="variable language_">this</span>, <span class="variable language_">arguments</span>);</span><br><span class="line">    &#125;,delay)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h2 id="节流"><a href="#节流" class="headerlink" title="节流"></a>节流</h2><ol><li>设置flag</li><li>flag一段时间后为true，执行函数</li></ol><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="title function_">throttle</span> = (<span class="params">fn,delay</span>)=&gt;&#123;</span><br><span class="line">  <span class="keyword">let</span> flag = <span class="literal">true</span></span><br><span class="line">  <span class="keyword">return</span> <span class="keyword">function</span>(<span class="params"></span>)&#123;</span><br><span class="line">    <span class="keyword">if</span>(flag)&#123;</span><br><span class="line">      <span class="built_in">setTimeout</span>(<span class="function">()=&gt;</span>&#123;</span><br><span class="line">        fn.<span class="title function_">apply</span>(<span class="variable language_">this</span>,<span class="variable language_">arguments</span>)</span><br><span class="line">        flag = <span class="literal">true</span></span><br><span class="line">      &#125;, delay)</span><br><span class="line">      flag = <span class="literal">false</span></span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;概念&quot;&gt;&lt;a href=&quot;#概念&quot; class=&quot;headerlink&quot; title=&quot;概念&quot;&gt;&lt;/a&gt;概念&lt;/h1&gt;&lt;p&gt;避免高频操作&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;防抖：触发高频事件后n秒内函数只会执行一次,如果n秒内高频事件再次被触发,则重新计算时间。&lt;/li&gt;</summary>
+      
+    
+    
+    
+    <category term="手写题" scheme="https://leaningzzz.github.io/blog/categories/%E6%89%8B%E5%86%99%E9%A2%98/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>浏览器</title>
@@ -290,11 +314,11 @@
     <category term="八股文" scheme="https://leaningzzz.github.io/blog/categories/%E5%85%AB%E8%82%A1%E6%96%87/"/>
     
     
-    <category term="html" scheme="https://leaningzzz.github.io/blog/tags/html/"/>
-    
     <category term="八股文" scheme="https://leaningzzz.github.io/blog/tags/%E5%85%AB%E8%82%A1%E6%96%87/"/>
     
     <category term="面试资料" scheme="https://leaningzzz.github.io/blog/tags/%E9%9D%A2%E8%AF%95%E8%B5%84%E6%96%99/"/>
+    
+    <category term="html" scheme="https://leaningzzz.github.io/blog/tags/html/"/>
     
   </entry>
   
@@ -344,11 +368,11 @@
     <category term="八股文" scheme="https://leaningzzz.github.io/blog/categories/%E5%85%AB%E8%82%A1%E6%96%87/"/>
     
     
+    <category term="css" scheme="https://leaningzzz.github.io/blog/tags/css/"/>
+    
     <category term="八股文" scheme="https://leaningzzz.github.io/blog/tags/%E5%85%AB%E8%82%A1%E6%96%87/"/>
     
     <category term="面试资料" scheme="https://leaningzzz.github.io/blog/tags/%E9%9D%A2%E8%AF%95%E8%B5%84%E6%96%99/"/>
-    
-    <category term="css" scheme="https://leaningzzz.github.io/blog/tags/css/"/>
     
   </entry>
   
@@ -491,30 +515,6 @@
       
       
     <summary type="html">&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span </summary>
-      
-    
-    
-    
-    <category term="leetcode" scheme="https://leaningzzz.github.io/blog/categories/leetcode/"/>
-    
-    
-    <category term="每日一题" scheme="https://leaningzzz.github.io/blog/tags/%E6%AF%8F%E6%97%A5%E4%B8%80%E9%A2%98/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>2335.装满杯子需要的最短总时长</title>
-    <link href="https://leaningzzz.github.io/blog/2023/02/12/leetcode/2335-%E8%A3%85%E6%BB%A1%E6%9D%AF%E5%AD%90%E9%9C%80%E8%A6%81%E7%9A%84%E6%9C%80%E7%9F%AD%E6%80%BB%E6%97%B6%E9%95%BF/"/>
-    <id>https://leaningzzz.github.io/blog/2023/02/12/leetcode/2335-%E8%A3%85%E6%BB%A1%E6%9D%AF%E5%AD%90%E9%9C%80%E8%A6%81%E7%9A%84%E6%9C%80%E7%9F%AD%E6%80%BB%E6%97%B6%E9%95%BF/</id>
-    <published>2023-02-11T16:32:23.000Z</published>
-    <updated>2023-02-14T07:51:17.831Z</updated>
-    
-    <content type="html"><![CDATA[<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment"> * @lc app=leetcode.cn id=2335 lang=javascript</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * [2335] 装满杯子需要的最短总时长</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// @lc code=start</span></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> &#123;<span class="type">number[]</span>&#125; <span class="variable">amount</span></span></span><br><span class="line"><span class="comment"> * <span class="doctag">@return</span> &#123;<span class="type">number</span>&#125;</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">var</span> fillCups = <span class="keyword">function</span> (<span class="params">amount</span>) &#123;</span><br><span class="line">  <span class="keyword">let</span> [first, second, third] = amount.<span class="title function_">sort</span>(<span class="function">(<span class="params">a, b</span>) =&gt;</span> a - b)</span><br><span class="line"></span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(first, second, third)</span><br><span class="line">  <span class="keyword">if</span> (first + second &lt;= third) &#123;</span><br><span class="line">    <span class="keyword">return</span> third</span><br><span class="line">  &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="title class_">Math</span>.<span class="title function_">ceil</span>((first + second + third) / <span class="number">2</span>)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="comment">// const amount = [1, 4, 2]</span></span><br><span class="line"><span class="keyword">const</span> amount = [<span class="number">7</span>, <span class="number">10</span>, <span class="number">1</span>]</span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="title function_">fillCups</span>(amount))</span><br><span class="line"><span class="comment">// @lc code=end</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 3 + 2 + 2</span></span><br></pre></td></tr></table></figure>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;l</summary>
       
     
     

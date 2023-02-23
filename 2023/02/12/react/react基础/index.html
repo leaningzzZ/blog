@@ -17,20 +17,20 @@
   <meta http-equiv="window-target" content="_top" />
   
   
-  <title>react基础 | lzzZ</title>
+  <title>React | lzzZ</title>
   <meta name="description" content="事件中，箭头函数和bind的区别  事件  react合成事件，统一挂载到根元素上 挂载到根元素上的弊端   React.portal  父组件更新，子组件一定更新吗？  子组件更新，父组件会不会更新？  shouldComponentUpdate在provider&#x2F;context更新时无效，即总会render  性能优化  pureComponent：相当于在shouldCompon">
 <meta property="og:type" content="article">
-<meta property="og:title" content="react基础">
+<meta property="og:title" content="React">
 <meta property="og:url" content="https://leaningzzz.github.io/blog/2023/02/12/react/react%E5%9F%BA%E7%A1%80/index.html">
 <meta property="og:site_name" content="lzzZ">
 <meta property="og:description" content="事件中，箭头函数和bind的区别  事件  react合成事件，统一挂载到根元素上 挂载到根元素上的弊端   React.portal  父组件更新，子组件一定更新吗？  子组件更新，父组件会不会更新？  shouldComponentUpdate在provider&#x2F;context更新时无效，即总会render  性能优化  pureComponent：相当于在shouldCompon">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-02-11T16:32:03.000Z">
-<meta property="article:modified_time" content="2023-02-16T03:17:47.353Z">
+<meta property="article:modified_time" content="2023-02-23T07:10:40.722Z">
 <meta property="article:author" content="lzzZ">
 <meta property="article:tag" content="八股文">
 <meta property="article:tag" content="面试资料">
-<meta property="article:tag" content="react">
+<meta property="article:tag" content="React">
 <meta name="twitter:card" content="summary">
   <!-- Canonical links -->
   <link rel="canonical" href="https://leaningzzz.github.io/blog/2023/02/12/react/react%E5%9F%BA%E7%A1%80/index.html">
@@ -153,7 +153,7 @@
   <div class="widget">
     <h3 class="widget-title">分类</h3>
     <div class="widget-body">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/blog/categories/leetcode/">leetcode</a><span class="category-list-count">11</span></li><li class="category-list-item"><a class="category-list-link" href="/blog/categories/%E5%85%AB%E8%82%A1%E6%96%87/">八股文</a><span class="category-list-count">6</span></li><li class="category-list-item"><a class="category-list-link" href="/blog/categories/%E6%89%8B%E5%86%99%E9%A2%98/">手写题</a><span class="category-list-count">3</span></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/blog/categories/leetcode/">leetcode</a><span class="category-list-count">11</span></li><li class="category-list-item"><a class="category-list-link" href="/blog/categories/%E5%85%AB%E8%82%A1%E6%96%87/">八股文</a><span class="category-list-count">6</span></li><li class="category-list-item"><a class="category-list-link" href="/blog/categories/%E6%89%8B%E5%86%99%E9%A2%98/">手写题</a><span class="category-list-count">4</span></li></ul>
     </div>
   </div>
 
@@ -163,7 +163,7 @@
   <div class="widget">
     <h3 class="widget-title">归档</h3>
     <div class="widget-body">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2023/02/">二月 2023</a><span class="archive-list-count">21</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2023/02/">二月 2023</a><span class="archive-list-count">22</span></li></ul>
     </div>
   </div>
 
@@ -175,6 +175,21 @@
     <div class="widget-body">
       <ul class="recent-post-list list-unstyled no-thumbnail">
         
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/blog/categories/%E6%89%8B%E5%86%99%E9%A2%98/">手写题</a>
+              </p>
+              <p class="item-title">
+                <a href="/blog/2023/02/23/interview/%E9%98%B2%E6%8A%96%E3%80%81%E8%8A%82%E6%B5%81/" class="title">防抖、节流</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2023-02-23T07:23:18.000Z" itemprop="datePublished">2023-02-23</time>
+              </p>
+            </div>
+          </li>
+          
           <li>
             
             <div class="item-inner">
@@ -235,21 +250,6 @@
             </div>
           </li>
           
-          <li>
-            
-            <div class="item-inner">
-              <p class="item-category">
-                <a class="category-link" href="/blog/categories/%E6%89%8B%E5%86%99%E9%A2%98/">手写题</a>
-              </p>
-              <p class="item-title">
-                <a href="/blog/2023/02/16/interview/promise%E7%9B%B8%E5%85%B3api%E5%8F%8A%E5%85%B6%E5%AE%9E%E7%8E%B0/" class="title">promise相关api及其实现</a>
-              </p>
-              <p class="item-date">
-                <time datetime="2023-02-16T06:07:12.000Z" itemprop="datePublished">2023-02-16</time>
-              </p>
-            </div>
-          </li>
-          
       </ul>
     </div>
   </div>
@@ -270,7 +270,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      react基础
+      React
     </h1>
   
 
@@ -291,7 +291,7 @@
         
   <span class="article-tag">
     <i class="icon icon-tags"></i>
-	<a class="article-tag-link-link" href="/blog/tags/react/" rel="tag">react</a>, <a class="article-tag-link-link" href="/blog/tags/%E5%85%AB%E8%82%A1%E6%96%87/" rel="tag">八股文</a>, <a class="article-tag-link-link" href="/blog/tags/%E9%9D%A2%E8%AF%95%E8%B5%84%E6%96%99/" rel="tag">面试资料</a>
+	<a class="article-tag-link-link" href="/blog/tags/React/" rel="tag">React</a>, <a class="article-tag-link-link" href="/blog/tags/%E5%85%AB%E8%82%A1%E6%96%87/" rel="tag">八股文</a>, <a class="article-tag-link-link" href="/blog/tags/%E9%9D%A2%E8%AF%95%E8%B5%84%E6%96%99/" rel="tag">面试资料</a>
   </span>
 
 
@@ -341,7 +341,11 @@
 </li>
 </ul>
 <h2 id="性能优化"><a href="#性能优化" class="headerlink" title="性能优化"></a>性能优化</h2><h2 id="组件复用"><a href="#组件复用" class="headerlink" title="组件复用"></a>组件复用</h2><h3 id="HOC高阶段组件"><a href="#HOC高阶段组件" class="headerlink" title="HOC高阶段组件"></a>HOC高阶段组件</h3><ul>
-<li>属性代理</li>
+<li>属性代理：通过HOC为传入组件增加新属性</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">Hoc</span>(<span class="params">Component</span>)&#123;</span><br><span class="line">  <span class="keyword">const</span> newProps = &#123;<span class="attr">aa</span>:<span class="number">1</span>&#125;</span><br><span class="line">  <span class="keyword">return</span> <span class="keyword">class</span> <span class="title class_">extend</span> <span class="title class_">React</span>.<span class="property">Component</span>&#123;</span><br><span class="line">    <span class="title function_">render</span>(<span class="params"></span>)&#123;</span><br><span class="line">      <span class="keyword">return</span> <span class="language-xml"><span class="tag">&lt;<span class="name">Component</span> &#123;<span class="attr">...newProps</span>&#125; /&gt;</span></span></span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
 <li>反向继承</li>
 </ul>
 <p>高阶组件的问题</p>
@@ -370,7 +374,7 @@
     
     <li class="post-copyright-link hidden-xs">
       <strong>本文链接：</strong>
-      <a href="https://leaningzzz.github.io/blog/2023/02/12/react/react%E5%9F%BA%E7%A1%80/" title="react基础" target="_blank" rel="external">https://leaningzzz.github.io/blog/2023/02/12/react/react基础/</a>
+      <a href="https://leaningzzz.github.io/blog/2023/02/12/react/react%E5%9F%BA%E7%A1%80/" title="React" target="_blank" rel="external">https://leaningzzz.github.io/blog/2023/02/12/react/react基础/</a>
     </li>
     
     <li class="post-copyright-license">
