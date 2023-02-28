@@ -236,7 +236,21 @@
 
   
   <url>
-    <loc>https://leaningzzz.github.io/blog/tags/css/</loc>
+    <loc>https://leaningzzz.github.io/blog/tags/call/</loc>
+    <lastmod>2023-02-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://leaningzzz.github.io/blog/tags/bind/</loc>
+    <lastmod>2023-02-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://leaningzzz.github.io/blog/tags/apply/</loc>
     <lastmod>2023-02-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -257,7 +271,14 @@
   </url>
   
   <url>
-    <loc>https://leaningzzz.github.io/blog/tags/html/</loc>
+    <loc>https://leaningzzz.github.io/blog/tags/React/</loc>
+    <lastmod>2023-02-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://leaningzzz.github.io/blog/tags/css/</loc>
     <lastmod>2023-02-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -272,6 +293,13 @@
   
   <url>
     <loc>https://leaningzzz.github.io/blog/tags/%E7%BD%91%E7%BB%9C/</loc>
+    <lastmod>2023-02-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://leaningzzz.github.io/blog/tags/html/</loc>
     <lastmod>2023-02-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -306,27 +334,6 @@
   </url>
   
   <url>
-    <loc>https://leaningzzz.github.io/blog/tags/call/</loc>
-    <lastmod>2023-02-28</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://leaningzzz.github.io/blog/tags/bind/</loc>
-    <lastmod>2023-02-28</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://leaningzzz.github.io/blog/tags/apply/</loc>
-    <lastmod>2023-02-28</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://leaningzzz.github.io/blog/tags/%E6%AF%8F%E6%97%A5%E4%B8%80%E9%A2%98/</loc>
     <lastmod>2023-02-28</lastmod>
     <changefreq>weekly</changefreq>
@@ -347,24 +354,17 @@
     <priority>0.2</priority>
   </url>
   
-  <url>
-    <loc>https://leaningzzz.github.io/blog/tags/React/</loc>
-    <lastmod>2023-02-28</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
 
   
   <url>
-    <loc>https://leaningzzz.github.io/blog/categories/%E5%85%AB%E8%82%A1%E6%96%87/</loc>
+    <loc>https://leaningzzz.github.io/blog/categories/%E6%89%8B%E5%86%99%E9%A2%98/</loc>
     <lastmod>2023-02-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://leaningzzz.github.io/blog/categories/%E6%89%8B%E5%86%99%E9%A2%98/</loc>
+    <loc>https://leaningzzz.github.io/blog/categories/%E5%85%AB%E8%82%A1%E6%96%87/</loc>
     <lastmod>2023-02-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
