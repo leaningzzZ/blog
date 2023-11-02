@@ -6,7 +6,7 @@
   <link href="https://leaningzzz.github.io/blog/atom.xml" rel="self"/>
   
   <link href="https://leaningzzz.github.io/blog/"/>
-  <updated>2023-11-01T08:27:37.027Z</updated>
+  <updated>2023-11-02T03:18:58.894Z</updated>
   <id>https://leaningzzz.github.io/blog/</id>
   
   <author>
@@ -15,6 +15,54 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>28.找出字符串中第一个匹配项的下标</title>
+    <link href="https://leaningzzz.github.io/blog/2023/11/02/leetcode/28-%E6%89%BE%E5%87%BA%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%B8%AD%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%8C%B9%E9%85%8D%E9%A1%B9%E7%9A%84%E4%B8%8B%E6%A0%87/"/>
+    <id>https://leaningzzz.github.io/blog/2023/11/02/leetcode/28-%E6%89%BE%E5%87%BA%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%B8%AD%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%8C%B9%E9%85%8D%E9%A1%B9%E7%9A%84%E4%B8%8B%E6%A0%87/</id>
+    <published>2023-11-02T03:18:35.000Z</published>
+    <updated>2023-11-02T03:18:58.894Z</updated>
+    
+    <content type="html"><![CDATA[<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment"> * @lc app=leetcode.cn id=28 lang=javascript</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * [28] 找出字符串中第一个匹配项的下标</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// @lc code=start</span></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> &#123;<span class="type">string</span>&#125; <span class="variable">haystack</span></span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> &#123;<span class="type">string</span>&#125; <span class="variable">needle</span></span></span><br><span class="line"><span class="comment"> * <span class="doctag">@return</span> &#123;<span class="type">number</span>&#125;</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="comment">// var strStr = function (haystack, needle) &#123;</span></span><br><span class="line"><span class="comment">//   return haystack.indexOf(needle)</span></span><br><span class="line"><span class="comment">// &#125;;</span></span><br><span class="line"><span class="keyword">var</span> strStr = <span class="keyword">function</span> (<span class="params">haystack, needle</span>) &#123;</span><br><span class="line">  <span class="keyword">const</span> needleLength = needle.<span class="property">length</span></span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; haystack.<span class="property">length</span>; i++) &#123;</span><br><span class="line">    <span class="keyword">if</span> (haystack.<span class="title function_">slice</span>(i, needleLength + i) === needle) &#123;</span><br><span class="line">      <span class="keyword">return</span> i</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> -<span class="number">1</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// let haystack = &quot;sadbutsad&quot;, needle = &quot;sad&quot;</span></span><br><span class="line"><span class="keyword">let</span> haystack = <span class="string">&quot;a&quot;</span>, needle = <span class="string">&quot;a&quot;</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="title function_">strStr</span>(haystack, needle))</span><br><span class="line"><span class="comment">// @lc code=end</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span </summary>
+      
+    
+    
+    
+    <category term="leetcode" scheme="https://leaningzzz.github.io/blog/categories/leetcode/"/>
+    
+    
+    <category term="字符串" scheme="https://leaningzzz.github.io/blog/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>459.重复的子字符串</title>
+    <link href="https://leaningzzz.github.io/blog/2023/11/02/leetcode/459-%E9%87%8D%E5%A4%8D%E7%9A%84%E5%AD%90%E5%AD%97%E7%AC%A6%E4%B8%B2/"/>
+    <id>https://leaningzzz.github.io/blog/2023/11/02/leetcode/459-%E9%87%8D%E5%A4%8D%E7%9A%84%E5%AD%90%E5%AD%97%E7%AC%A6%E4%B8%B2/</id>
+    <published>2023-11-02T03:17:35.000Z</published>
+    <updated>2023-11-02T03:18:13.088Z</updated>
+    
+    <content type="html"><![CDATA[<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment"> * @lc app=leetcode.cn id=459 lang=javascript</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * [459] 重复的子字符串</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// @lc code=start</span></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> &#123;<span class="type">string</span>&#125; <span class="variable">s</span></span></span><br><span class="line"><span class="comment"> * <span class="doctag">@return</span> &#123;<span class="type">boolean</span>&#125;</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="comment">// 最多由长度为1的s.length个字符串重复的来</span></span><br><span class="line"><span class="comment">// 最少由长度为s.length/2个字符重复的来</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> repeatedSubstringPattern = <span class="keyword">function</span> (<span class="params">s</span>) &#123;</span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">1</span>; i &lt; s.<span class="property">length</span>; i++) &#123;</span><br><span class="line">    <span class="comment">// s.length % i !== 0  不能被整除，说明不是由长度为i的字符重复的来</span></span><br><span class="line">    <span class="comment">// 用subStr对字符串进行分割</span></span><br><span class="line">    <span class="keyword">if</span> (s.<span class="property">length</span> % i === <span class="number">0</span> &amp;&amp; s.<span class="title function_">split</span>(s.<span class="title function_">substring</span>(<span class="number">0</span>, i)).<span class="title function_">join</span>(<span class="string">&#x27;&#x27;</span>) === <span class="string">&#x27;&#x27;</span>) &#123;</span><br><span class="line">      <span class="keyword">return</span> <span class="literal">true</span></span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> <span class="literal">false</span></span><br><span class="line">&#125;;</span><br><span class="line"><span class="keyword">let</span> s = <span class="string">&quot;aaa&quot;</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="title function_">repeatedSubstringPattern</span>(s))</span><br><span class="line"><span class="comment">// @lc code=end</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span </summary>
+      
+    
+    
+    
+    <category term="leetcode" scheme="https://leaningzzz.github.io/blog/categories/leetcode/"/>
+    
+    
+    <category term="字符串" scheme="https://leaningzzz.github.io/blog/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/"/>
+    
+  </entry>
   
   <entry>
     <title>344.反转字符串</title>
@@ -451,63 +499,6 @@
       
       
     <summary type="html">&lt;h1 id=&quot;题目链接&quot;&gt;&lt;a href=&quot;#题目链接&quot; class=&quot;headerlink&quot; title=&quot;题目链接&quot;&gt;&lt;/a&gt;题目链接&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;https://leetcode.cn/problems/maximum-number-of-pairs-</summary>
-      
-    
-    
-    
-    <category term="leetcode" scheme="https://leaningzzz.github.io/blog/categories/leetcode/"/>
-    
-    
-    <category term="每日一题" scheme="https://leaningzzz.github.io/blog/tags/%E6%AF%8F%E6%97%A5%E4%B8%80%E9%A2%98/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>手写call、bind、apply</title>
-    <link href="https://leaningzzz.github.io/blog/2023/02/14/interview/%E6%89%8B%E5%86%99call%E3%80%81bind%E3%80%81apply/"/>
-    <id>https://leaningzzz.github.io/blog/2023/02/14/interview/%E6%89%8B%E5%86%99call%E3%80%81bind%E3%80%81apply/</id>
-    <published>2023-02-14T08:46:50.000Z</published>
-    <updated>2023-02-16T03:17:38.074Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="call、bind、apply的用法"><a href="#call、bind、apply的用法" class="headerlink" title="call、bind、apply的用法"></a>call、bind、apply的用法</h1><ol><li>改变this指向。</li></ol><ul><li>call、apply 改变this后，会执行该方法。</li><li>bind返回改变this后的函数</li></ul><ol start="2"><li>参数不同</li></ol><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="title function_">call</span>(<span class="variable language_">this</span>,...args)</span><br><span class="line"><span class="title function_">apply</span>(<span class="variable language_">this</span>,[args])</span><br><span class="line"><span class="title function_">bind</span>(<span class="variable language_">this</span>)</span><br></pre></td></tr></table></figure><h1 id="实现"><a href="#实现" class="headerlink" title="实现"></a>实现</h1><ol><li>call</li></ol><p>将方法挂载到context上进行调用。<br>调用完成后记录result，并删除context上的挂载</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">myCall</span>(<span class="params">context,...args</span>)&#123;</span><br><span class="line">  <span class="keyword">if</span>(context === <span class="literal">undefined</span> || context === <span class="literal">null</span>)&#123;</span><br><span class="line">    context = <span class="variable language_">window</span></span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">let</span> symbol = <span class="title class_">Symbol</span>()</span><br><span class="line">  context[symbol] = <span class="variable language_">this</span></span><br><span class="line">  <span class="keyword">let</span> result = context[symbol](...args)</span><br><span class="line">  <span class="keyword">delete</span> context[symbol]</span><br><span class="line">  <span class="keyword">return</span> result</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><ol start="2"><li>apply<br>与call思路一致</li></ol><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">myApply</span> (context,args)&#123;</span><br><span class="line">  <span class="keyword">if</span>(context === <span class="literal">undefined</span> || context === <span class="literal">null</span>)&#123;</span><br><span class="line">    context = <span class="variable language_">window</span></span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">let</span> symbol = <span class="title class_">Symbol</span>()</span><br><span class="line">  context[symbol] = <span class="variable language_">this</span></span><br><span class="line">  <span class="keyword">const</span>  result = context[symbol](...args)</span><br><span class="line">  <span class="keyword">delete</span> context[symbol]</span><br><span class="line">  <span class="keyword">return</span> result</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><ol start="3"><li>bind<br>返回的是一个方法</li></ol><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">myBind</span> (context,...args)&#123;</span><br><span class="line">  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h1 id=&quot;call、bind、apply的用法&quot;&gt;&lt;a href=&quot;#call、bind、apply的用法&quot; class=&quot;headerlink&quot; title=&quot;call、bind、apply的用法&quot;&gt;&lt;/a&gt;call、bind、apply的用法&lt;/h1&gt;&lt;ol&gt;
-&lt;li&gt;</summary>
-      
-    
-    
-    
-    <category term="手写题" scheme="https://leaningzzz.github.io/blog/categories/%E6%89%8B%E5%86%99%E9%A2%98/"/>
-    
-    
-    <category term="八股文" scheme="https://leaningzzz.github.io/blog/tags/%E5%85%AB%E8%82%A1%E6%96%87/"/>
-    
-    <category term="面试资料" scheme="https://leaningzzz.github.io/blog/tags/%E9%9D%A2%E8%AF%95%E8%B5%84%E6%96%99/"/>
-    
-    <category term="call" scheme="https://leaningzzz.github.io/blog/tags/call/"/>
-    
-    <category term="bind" scheme="https://leaningzzz.github.io/blog/tags/bind/"/>
-    
-    <category term="apply" scheme="https://leaningzzz.github.io/blog/tags/apply/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>1124.表现良好的最长时间段</title>
-    <link href="https://leaningzzz.github.io/blog/2023/02/14/leetcode/1124-%E8%A1%A8%E7%8E%B0%E8%89%AF%E5%A5%BD%E7%9A%84%E6%9C%80%E9%95%BF%E6%97%B6%E9%97%B4%E6%AE%B5/"/>
-    <id>https://leaningzzz.github.io/blog/2023/02/14/leetcode/1124-%E8%A1%A8%E7%8E%B0%E8%89%AF%E5%A5%BD%E7%9A%84%E6%9C%80%E9%95%BF%E6%97%B6%E9%97%B4%E6%AE%B5/</id>
-    <published>2023-02-14T07:51:38.000Z</published>
-    <updated>2023-02-14T08:01:50.535Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="题目链接"><a href="#题目链接" class="headerlink" title="题目链接"></a>题目链接</h1><p><a href="https://leetcode.cn/problems/longest-well-performing-interval/">https://leetcode.cn/problems/longest-well-performing-interval/</a></p><h1 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h1><ol><li>[9,9,6,0,6,6,9] 转为 [1,1,-1,-1,-1,-1,1]</li><li>求出转化后的数组中最长的合为正的子数组长度</li></ol><p><strong>最后还是用暴力循环求出的解</strong></p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment"> * @lc app=leetcode.cn id=1124 lang=javascript</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * [1124] 表现良好的最长时间段</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// @lc code=start</span></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> &#123;<span class="type">number[]</span>&#125; <span class="variable">hours</span></span></span><br><span class="line"><span class="comment"> * <span class="doctag">@return</span> &#123;<span class="type">number</span>&#125;</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">var</span> longestWPI = <span class="keyword">function</span> (<span class="params">hours</span>) &#123;</span><br><span class="line">  <span class="keyword">if</span> (hours.<span class="title function_">every</span>(<span class="function"><span class="params">item</span> =&gt;</span> item &lt;= <span class="number">8</span>)) &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span></span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">const</span> tempArr = hours.<span class="title function_">map</span>(<span class="function"><span class="params">item</span> =&gt;</span> &#123;</span><br><span class="line">    <span class="keyword">if</span> (item &lt;= <span class="number">8</span>) &#123;</span><br><span class="line">      <span class="keyword">return</span> -<span class="number">1</span></span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">      <span class="keyword">return</span> <span class="number">1</span></span><br><span class="line">    &#125;</span><br><span class="line">  &#125;)</span><br><span class="line">  <span class="keyword">let</span> result = <span class="number">0</span></span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; tempArr.<span class="property">length</span>; i++) &#123;</span><br><span class="line">    <span class="keyword">let</span> temp = <span class="number">0</span>, maxLength = <span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">let</span> j = i; j &lt; tempArr.<span class="property">length</span>; j++) &#123;</span><br><span class="line">      temp = temp + tempArr[j]</span><br><span class="line">      <span class="keyword">if</span> (temp &gt; <span class="number">0</span> || (temp &gt; <span class="number">0</span> &amp;&amp; j === tempArr.<span class="property">length</span> - <span class="number">1</span>)) &#123;</span><br><span class="line">        maxLength = <span class="title class_">Math</span>.<span class="title function_">max</span>(j - i, maxLength)</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    result = <span class="title class_">Math</span>.<span class="title function_">max</span>(maxLength + <span class="number">1</span>, result)</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> result</span><br><span class="line">&#125;;</span><br><span class="line"><span class="comment">// const hours = [9, 9, 6, 0, 6, 6, 9]</span></span><br><span class="line"><span class="comment">// const hours = [6, 6, 6]</span></span><br><span class="line"><span class="comment">// const hours = [6, 6, 9]</span></span><br><span class="line"><span class="comment">// const hours = [6, 9, 9]</span></span><br><span class="line"><span class="keyword">const</span> hours = [<span class="number">6</span>, <span class="number">6</span>, <span class="number">8</span>]</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="title function_">longestWPI</span>(hours))</span><br><span class="line"><span class="comment">// @lc code=end</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h1 id=&quot;题目链接&quot;&gt;&lt;a href=&quot;#题目链接&quot; class=&quot;headerlink&quot; title=&quot;题目链接&quot;&gt;&lt;/a&gt;题目链接&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;https://leetcode.cn/problems/longest-well-performing-</summary>
       
     
     
