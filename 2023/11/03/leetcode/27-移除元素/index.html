@@ -17,20 +17,20 @@
   <meta http-equiv="window-target" content="_top" />
   
   
-  <title>232.用栈实现队列 | lzzZ</title>
-  <meta name="description" content="12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455&#x2F;* * @lc app&#x3D;leetcode.cn id&#x3D;232 lang&#x3D;typescript * * [232] 用栈实现队列 *&#x2F;&#x2F;&#x2F; @lc code&#x3D;startclass MyQueue &amp;">
+  <title>27.移除元素 | lzzZ</title>
+  <meta name="description" content="123456789101112131415161718192021222324252627282930313233343536373839&#x2F;* * @lc app&#x3D;leetcode.cn id&#x3D;27 lang&#x3D;javascript * * [27] 移除元素 *&#x2F;&#x2F;&#x2F; @lc code&#x3D;start&#x2F;** * @param &amp;#123;number[]&amp;#125; nums * @param &amp;#1">
 <meta property="og:type" content="article">
-<meta property="og:title" content="232.用栈实现队列">
-<meta property="og:url" content="https://leaningzzz.github.io/blog/2023/11/03/leetcode/232-%E7%94%A8%E6%A0%88%E5%AE%9E%E7%8E%B0%E9%98%9F%E5%88%97/index.html">
+<meta property="og:title" content="27.移除元素">
+<meta property="og:url" content="https://leaningzzz.github.io/blog/2023/11/03/leetcode/27-%E7%A7%BB%E9%99%A4%E5%85%83%E7%B4%A0/index.html">
 <meta property="og:site_name" content="lzzZ">
-<meta property="og:description" content="12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455&#x2F;* * @lc app&#x3D;leetcode.cn id&#x3D;232 lang&#x3D;typescript * * [232] 用栈实现队列 *&#x2F;&#x2F;&#x2F; @lc code&#x3D;startclass MyQueue &amp;">
+<meta property="og:description" content="123456789101112131415161718192021222324252627282930313233343536373839&#x2F;* * @lc app&#x3D;leetcode.cn id&#x3D;27 lang&#x3D;javascript * * [27] 移除元素 *&#x2F;&#x2F;&#x2F; @lc code&#x3D;start&#x2F;** * @param &amp;#123;number[]&amp;#125; nums * @param &amp;#1">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-11-03T07:39:06.000Z">
-<meta property="article:modified_time" content="2023-11-03T07:40:06.493Z">
+<meta property="article:published_time" content="2023-11-03T07:44:24.000Z">
+<meta property="article:modified_time" content="2023-11-03T07:45:34.021Z">
 <meta property="article:author" content="lzzZ">
 <meta name="twitter:card" content="summary">
   <!-- Canonical links -->
-  <link rel="canonical" href="https://leaningzzz.github.io/blog/2023/11/03/leetcode/232-%E7%94%A8%E6%A0%88%E5%AE%9E%E7%8E%B0%E9%98%9F%E5%88%97/index.html">
+  <link rel="canonical" href="https://leaningzzz.github.io/blog/2023/11/03/leetcode/27-%E7%A7%BB%E9%99%A4%E5%85%83%E7%B4%A0/index.html">
   
     <link rel="alternate" href="/atom.xml" title="lzzZ" type="application/atom+xml">
   
@@ -260,14 +260,14 @@
   
 <main class="main" role="main">
   <div class="content">
-  <article id="post-leetcode/232-用栈实现队列" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
+  <article id="post-leetcode/27-移除元素" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
     
     <div class="article-header">
       
         
   
     <h1 class="article-title" itemprop="name">
-      232.用栈实现队列
+      27.移除元素
     </h1>
   
 
@@ -275,8 +275,8 @@
       <div class="article-meta">
         <span class="article-date">
     <i class="icon icon-calendar-check"></i>
-	<a href="/blog/2023/11/03/leetcode/232-%E7%94%A8%E6%A0%88%E5%AE%9E%E7%8E%B0%E9%98%9F%E5%88%97/" class="article-date">
-	  <time datetime="2023-11-03T07:39:06.000Z" itemprop="datePublished">2023-11-03</time>
+	<a href="/blog/2023/11/03/leetcode/27-%E7%A7%BB%E9%99%A4%E5%85%83%E7%B4%A0/" class="article-date">
+	  <time datetime="2023-11-03T07:44:24.000Z" itemprop="datePublished">2023-11-03</time>
 	</a>
 </span>
         
@@ -289,13 +289,13 @@
 
         
 
-        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/blog/2023/11/03/leetcode/232-%E7%94%A8%E6%A0%88%E5%AE%9E%E7%8E%B0%E9%98%9F%E5%88%97/#comments" class="article-comment-link">评论</a></span>
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/blog/2023/11/03/leetcode/27-%E7%A7%BB%E9%99%A4%E5%85%83%E7%B4%A0/#comments" class="article-comment-link">评论</a></span>
         
       </div>
     </div>
     <div class="article-entry marked-body" itemprop="articleBody">
       
-        <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment"> * @lc app=leetcode.cn id=232 lang=typescript</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * [232] 用栈实现队列</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// @lc code=start</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">MyQueue</span> &#123;</span><br><span class="line">  protected <span class="attr">inStack</span>: any[]</span><br><span class="line">  protected <span class="attr">outStack</span>: any[]</span><br><span class="line">  <span class="title function_">constructor</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">inStack</span> = []</span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">outStack</span> = []</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="title function_">push</span>(<span class="attr">x</span>: number): <span class="keyword">void</span> &#123;</span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">inStack</span>.<span class="title function_">push</span>(x)</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="title function_">pop</span>(): number &#123;</span><br><span class="line">    <span class="keyword">if</span> (!<span class="variable language_">this</span>.<span class="property">outStack</span>.<span class="property">length</span>) &#123;</span><br><span class="line">      <span class="variable language_">this</span>.<span class="title function_">exchange</span>()</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="variable language_">this</span>.<span class="property">outStack</span>.<span class="title function_">pop</span>()</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="title function_">peek</span>(): number &#123;</span><br><span class="line">    <span class="comment">// outStack中最后一位</span></span><br><span class="line">    <span class="keyword">if</span> (!<span class="variable language_">this</span>.<span class="property">outStack</span>.<span class="property">length</span>) &#123;</span><br><span class="line">      <span class="variable language_">this</span>.<span class="title function_">exchange</span>()</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="variable language_">this</span>.<span class="property">outStack</span>[<span class="variable language_">this</span>.<span class="property">outStack</span>.<span class="property">length</span>-<span class="number">1</span>]</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="title function_">empty</span>(): boolean &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="variable language_">this</span>.<span class="property">inStack</span>.<span class="property">length</span> === <span class="number">0</span> &amp;&amp; <span class="variable language_">this</span>.<span class="property">outStack</span>.<span class="property">length</span> === <span class="number">0</span>;</span><br><span class="line">   &#125;</span><br><span class="line">  private <span class="title function_">exchange</span>(): <span class="keyword">void</span> &#123;</span><br><span class="line">    <span class="comment">// instack 转 outstack</span></span><br><span class="line">    <span class="keyword">while</span> (<span class="variable language_">this</span>.<span class="property">inStack</span>.<span class="property">length</span>) &#123;</span><br><span class="line">      <span class="variable language_">this</span>.<span class="property">outStack</span>.<span class="title function_">push</span>(<span class="variable language_">this</span>.<span class="property">inStack</span>.<span class="title function_">pop</span>())</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Your MyQueue object will be instantiated and called as such:</span></span><br><span class="line"><span class="comment"> * var obj = new MyQueue()</span></span><br><span class="line"><span class="comment"> * obj.push(x)</span></span><br><span class="line"><span class="comment"> * var param_2 = obj.pop()</span></span><br><span class="line"><span class="comment"> * var param_3 = obj.peek()</span></span><br><span class="line"><span class="comment"> * var param_4 = obj.empty()</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="comment">// @lc code=end</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+        <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment"> * @lc app=leetcode.cn id=27 lang=javascript</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * [27] 移除元素</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// @lc code=start</span></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> &#123;<span class="type">number[]</span>&#125; <span class="variable">nums</span></span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> &#123;<span class="type">number</span>&#125; <span class="variable">val</span></span></span><br><span class="line"><span class="comment"> * <span class="doctag">@return</span> &#123;<span class="type">number</span>&#125;</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="comment">// var removeElement = function (nums, val) &#123;</span></span><br><span class="line"><span class="comment">//   let left = 0, right = nums.length;</span></span><br><span class="line"><span class="comment">//   while (left &lt; right) &#123;</span></span><br><span class="line"><span class="comment">//     if (nums[left] === val) &#123;</span></span><br><span class="line"><span class="comment">//       nums[left] = nums[right - 1];</span></span><br><span class="line"><span class="comment">//       right--;</span></span><br><span class="line"><span class="comment">//     &#125; else &#123;</span></span><br><span class="line"><span class="comment">//       left++;</span></span><br><span class="line"><span class="comment">//     &#125;</span></span><br><span class="line"><span class="comment">//   &#125;</span></span><br><span class="line"><span class="comment">//   return left;</span></span><br><span class="line"><span class="comment">// &#125;;</span></span><br><span class="line"><span class="keyword">var</span> removeElement = <span class="keyword">function</span> (<span class="params">nums, val</span>) &#123;</span><br><span class="line">  <span class="keyword">let</span> ans = <span class="number">0</span>;</span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">const</span> num <span class="keyword">of</span> nums) &#123;</span><br><span class="line">    <span class="keyword">if</span> (num != val) &#123;</span><br><span class="line">      nums[ans] = num;</span><br><span class="line">      ans++;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> ans;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="keyword">let</span> nums = [<span class="number">3</span>, <span class="number">2</span>, <span class="number">2</span>, <span class="number">3</span>], val = <span class="number">3</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="title function_">removeElement</span>(nums, val))</span><br><span class="line"><span class="comment">// @lc code=end</span></span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -305,7 +305,7 @@
     
     <li class="post-copyright-link hidden-xs">
       <strong>本文链接：</strong>
-      <a href="https://leaningzzz.github.io/blog/2023/11/03/leetcode/232-%E7%94%A8%E6%A0%88%E5%AE%9E%E7%8E%B0%E9%98%9F%E5%88%97/" title="232.用栈实现队列" target="_blank" rel="external">https://leaningzzz.github.io/blog/2023/11/03/leetcode/232-用栈实现队列/</a>
+      <a href="https://leaningzzz.github.io/blog/2023/11/03/leetcode/27-%E7%A7%BB%E9%99%A4%E5%85%83%E7%B4%A0/" title="27.移除元素" target="_blank" rel="external">https://leaningzzz.github.io/blog/2023/11/03/leetcode/27-移除元素/</a>
     </li>
     
     <li class="post-copyright-license">
@@ -336,13 +336,9 @@
   
   <ul class="pager pull-left">
     
-    <li class="prev">
-      <a href="/blog/2023/11/03/leetcode/704-%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE/" title="704.二分查找"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;上一篇</span></a>
-    </li>
-    
     
     <li class="next">
-      <a href="/blog/2023/11/03/leetcode/225-%E7%94%A8%E9%98%9F%E5%88%97%E5%AE%9E%E7%8E%B0%E6%A0%88/" title="225.用队列实现栈"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
+      <a href="/blog/2023/11/03/leetcode/704-%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE/" title="704.二分查找"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
     </li>
     
     
@@ -421,9 +417,9 @@ window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
     <script defer>
     var disqus_config = function () {
         
-            this.page.url = 'https://leaningzzz.github.io/blog/2023/11/03/leetcode/232-%E7%94%A8%E6%A0%88%E5%AE%9E%E7%8E%B0%E9%98%9F%E5%88%97/';
+            this.page.url = 'https://leaningzzz.github.io/blog/2023/11/03/leetcode/27-%E7%A7%BB%E9%99%A4%E5%85%83%E7%B4%A0/';
         
-        this.page.identifier = 'leetcode/232-用栈实现队列';
+        this.page.identifier = 'leetcode/27-移除元素';
     };
     (function() { 
         var d = document, s = d.createElement('script');  
