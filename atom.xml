@@ -6,7 +6,7 @@
   <link href="https://leaningzzz.github.io/blog/atom.xml" rel="self"/>
   
   <link href="https://leaningzzz.github.io/blog/"/>
-  <updated>2023-11-03T07:45:34.021Z</updated>
+  <updated>2023-11-09T06:45:20.580Z</updated>
   <id>https://leaningzzz.github.io/blog/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>347.前-k-个高频元素.js</title>
+    <link href="https://leaningzzz.github.io/blog/2023/11/07/leetcode/347-%E5%89%8D-k-%E4%B8%AA%E9%AB%98%E9%A2%91%E5%85%83%E7%B4%A0-js/"/>
+    <id>https://leaningzzz.github.io/blog/2023/11/07/leetcode/347-%E5%89%8D-k-%E4%B8%AA%E9%AB%98%E9%A2%91%E5%85%83%E7%B4%A0-js/</id>
+    <published>2023-11-07T03:17:35.000Z</published>
+    <updated>2023-11-09T06:45:20.580Z</updated>
+    
+    <content type="html"><![CDATA[<ol><li>统计出现次数</li><li>排序</li><li>输出</li></ol><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment"> * @lc app=leetcode.cn id=347 lang=javascript</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * [347] 前 K 个高频元素</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// @lc code=start</span></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> &#123;<span class="type">number[]</span>&#125; <span class="variable">nums</span></span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> &#123;<span class="type">number</span>&#125; <span class="variable">k</span></span></span><br><span class="line"><span class="comment"> * <span class="doctag">@return</span> &#123;<span class="type">number[]</span>&#125;</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">var</span> topKFrequent = <span class="keyword">function</span> (<span class="params">nums, k</span>) &#123;</span><br><span class="line">  <span class="keyword">const</span> map = &#123;&#125;</span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; nums.<span class="property">length</span>; i++) &#123;</span><br><span class="line">    <span class="keyword">if</span> (!map[nums[i]]) &#123;</span><br><span class="line">      map[nums[i]] = <span class="number">1</span></span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">      map[nums[i]] += <span class="number">1</span></span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> <span class="title class_">Object</span>.<span class="title function_">keys</span>(map).<span class="title function_">sort</span>(<span class="function">(<span class="params">a, b</span>) =&gt;</span> map[b] - map[a]).<span class="title function_">slice</span>(<span class="number">0</span>, k)</span><br><span class="line">&#125;;</span><br><span class="line"><span class="keyword">let</span> nums = [<span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">2</span>, <span class="number">3</span>], k = <span class="number">2</span></span><br><span class="line"><span class="title function_">topKFrequent</span>(nums, k)</span><br><span class="line"><span class="comment">// @lc code=end</span></span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;ol&gt;
+&lt;li&gt;统计出现次数&lt;/li&gt;
+&lt;li&gt;排序&lt;/li&gt;
+&lt;li&gt;输出&lt;/li&gt;
+&lt;/ol&gt;
+&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line</summary>
+      
+    
+    
+    
+    <category term="leetcode" scheme="https://leaningzzz.github.io/blog/categories/leetcode/"/>
+    
+    
+    <category term="字符串" scheme="https://leaningzzz.github.io/blog/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/"/>
+    
+  </entry>
   
   <entry>
     <title>27.移除元素</title>
@@ -480,30 +509,6 @@
     <category term="浏览器" scheme="https://leaningzzz.github.io/blog/tags/%E6%B5%8F%E8%A7%88%E5%99%A8/"/>
     
     <category term="缓存" scheme="https://leaningzzz.github.io/blog/tags/%E7%BC%93%E5%AD%98/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>50.pow-x-n</title>
-    <link href="https://leaningzzz.github.io/blog/2023/02/21/leetcode/50-pow-x-n/"/>
-    <id>https://leaningzzz.github.io/blog/2023/02/21/leetcode/50-pow-x-n/</id>
-    <published>2023-02-21T04:38:51.000Z</published>
-    <updated>2023-02-22T02:43:23.593Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h1><p><a href="https://leetcode.cn/problems/powx-n/">https://leetcode.cn/problems/powx-n/</a></p><h1 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h1><ol><li>直接计算</li><li>分治</li></ol><h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1><h2 id="直接计算"><a href="#直接计算" class="headerlink" title="直接计算"></a>直接计算</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> &#123;<span class="type">number</span>&#125; <span class="variable">x</span></span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> &#123;<span class="type">number</span>&#125; <span class="variable">n</span></span></span><br><span class="line"><span class="comment"> * <span class="doctag">@return</span> &#123;<span class="type">number</span>&#125;</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">var</span> myPow = <span class="keyword">function</span>(<span class="params">x, n</span>) &#123;</span><br><span class="line">    <span class="keyword">return</span> x**n</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure><h2 id="分治法"><a href="#分治法" class="headerlink" title="分治法"></a>分治法</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> &#123;<span class="type">number</span>&#125; <span class="variable">x</span></span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> &#123;<span class="type">number</span>&#125; <span class="variable">n</span></span></span><br><span class="line"><span class="comment"> * <span class="doctag">@return</span> &#123;<span class="type">number</span>&#125;</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">var</span> myPow = <span class="keyword">function</span> (<span class="params">x, n</span>) &#123;</span><br><span class="line">  <span class="keyword">if</span> (n === <span class="number">0</span>) &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">1</span></span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">if</span> (n === <span class="number">1</span>) &#123;</span><br><span class="line">    <span class="keyword">return</span> x</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">if</span> (n &lt; <span class="number">0</span>) &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">1</span> / <span class="title function_">myPow</span>(x, -n)</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="comment">// 奇数</span></span><br><span class="line">  <span class="keyword">if</span> (n % <span class="number">2</span>) &#123;</span><br><span class="line">    <span class="keyword">return</span> x * <span class="title function_">myPow</span>(x, n - <span class="number">1</span>);</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="comment">// 偶数</span></span><br><span class="line">  <span class="keyword">return</span> <span class="title function_">myPow</span>(x * x, n / <span class="number">2</span>)</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h1 id=&quot;题目&quot;&gt;&lt;a href=&quot;#题目&quot; class=&quot;headerlink&quot; title=&quot;题目&quot;&gt;&lt;/a&gt;题目&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;https://leetcode.cn/problems/powx-n/&quot;&gt;https://leetcode.cn/pro</summary>
-      
-    
-    
-    
-    <category term="leetcode" scheme="https://leaningzzz.github.io/blog/categories/leetcode/"/>
-    
-    
-    <category term="每日一题" scheme="https://leaningzzz.github.io/blog/tags/%E6%AF%8F%E6%97%A5%E4%B8%80%E9%A2%98/"/>
     
   </entry>
   
