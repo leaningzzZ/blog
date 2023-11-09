@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://leaningzzz.github.io/blog/blog/2023/11/08/leetcode/101-%E5%AF%B9%E7%A7%B0%E4%BA%8C%E5%8F%89%E6%A0%91/</loc>
+    <lastmod>2023-11-09</lastmod>
+  </url>
+  <url>
+    <loc>https://leaningzzz.github.io/blog/blog/2023/11/08/leetcode/226-%E7%BF%BB%E8%BD%AC%E4%BA%8C%E5%8F%89%E6%A0%91/</loc>
+    <lastmod>2023-11-09</lastmod>
+  </url>
+  <url>
     <loc>https://leaningzzz.github.io/blog/blog/2023/11/07/leetcode/347-%E5%89%8D-k-%E4%B8%AA%E9%AB%98%E9%A2%91%E5%85%83%E7%B4%A0-js/</loc>
     <lastmod>2023-11-09</lastmod>
   </url>
